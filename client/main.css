@@ -1,0 +1,58 @@
+/* CSS declarations go here */
+
+/*Home Page*/
+
+h1.jumbotron.header.homeHeader {
+    text-align: center;
+}
+img {
+    vertical-align: middle;
+    background-color: white;
+    margin: auto;
+    width: 31%;
+    padding-left: 41px;
+}
+
+#thirdImage img {
+    vertical-align: middle;
+    background-color: white;
+    margin: auto;
+    width: 31%;
+    padding-left: 41px;
+    
+}
+
+
+/*Nav Bar*/
+
+nav.navbar.navbar-default.navbar-static-top {
+    background-color: mediumpurple;
+}
+
+.navbar-default .navbar-nav > li > a {
+    color: white;
+}
+
+a.navbar-brand {
+    color: black!important;
+}
+
+/*Details Page*/
+
+h1.detailHeader {
+    text-align: center;
+}
+
+/*Contact Page*/
+
+h1.jumbotron.contactUs {
+    text-align: center;
+}
+
+/*Registry Page*/
+
+h1.registryHeader {
+    text-align: center;
+}
+
+
