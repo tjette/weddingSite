@@ -3,10 +3,12 @@ Template.home.helpers({
 });
 
 Template.home.events({
-  'click #homeHeader': function(event, template){
-    var weddingDate = new Date("07/29/2017");
+
+});
+
+Template.home.onRendered(function(){
+var weddingDate = new Date("07/29/2017 3:0 PM");
     
-$( "#homeHeader" ).click(function() {
     var currentDate = new Date();
      var second = 1000;
     var minute = second * 60;
@@ -22,11 +24,11 @@ $( "#homeHeader" ).click(function() {
         var minutes = Math.floor((distance % hour) / minute);
         var seconds = Math.floor((distance % minute) / second);
 
-      document.getElementById('homeHeader').innerHTML = days + " dDays until wedding";
-    }
-  
-  // $( ".homeHeader" ).html( "<div>Were Getting Married in </div>" );
+      document.getElementById('homeHeader').innerHTML = days + " days ";
+      document.getElementById('homeHeader').innerHTML += hours + " hours ";
+      document.getElementById('homeHeader').innerHTML += minutes + " minutes ";
+      document.getElementById('homeHeader').innerHTML += seconds + " seconds until the wedding! ";
 
-})
-}
+
+    }
 });
