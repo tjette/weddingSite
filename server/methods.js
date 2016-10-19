@@ -13,5 +13,8 @@ Meteor.methods({
       email: email,
       party: party
     });
+  },
+  removeRsvp: function(){
+    return Rsvp.remove({});
   }
 });
