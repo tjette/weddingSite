@@ -7,5 +7,11 @@ Meteor.methods({
       subject: 'New Message from Wedding Site',
       text: text
     });
+  },
+  addRsvp: function(email, party){
+    return Rsvp.insert({
+      email: email,
+      party: party
+    });
   }
 });

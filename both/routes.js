@@ -21,3 +21,9 @@ FlowRouter.route('/contact', {
  BlazeLayout.render('contact', {content: 'contact'});   
   }
 });
+
+FlowRouter.route('/rsvp', {
+    action: function() {
+ BlazeLayout.render('rsvp', {content: 'rsvp'});   
+  }
+});
