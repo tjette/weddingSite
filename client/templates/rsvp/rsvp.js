@@ -28,26 +28,35 @@ Template.rsvp.events({
     party : party
   }
 
- 
-
-  // Rsvp.insert({
-  //   email: email,
-  //   party: party
-  // });
-
+    swal({
+      title: "Are you sure?", 
+      text: "Are you sure that this is correct?", 
+      type: "warning",
+      showCancelButton: true,
+      closeOnConfirm: false,
+      confirmButtonText: "Yes, looks good!",
+      confirmButtonColor: "#ec6c62"
+    }, function(isConfirm) {
+      if (isConfirm) {
+    swal("Deleted!", "Your imaginary file has been deleted.", "success");
+  } else {
+    swal("Cancelled", "Your imaginary file is safe :)", "error");
+  }
+    });
+  
+  
   Meteor.call('addRsvp',data);
 
-  // var rsvpId = data;
-  // Session.set('rsvp', rsvpId);
-  // console.log(rsvpId);
-
-  
-
-  console.log("data", data);  
+ 
+  // console.log("data", data);  
 
 },
 
 'click .editRsvp': function(){
  var editPrompt= prompt("Please Enter Your Name");
+
+ if(editPrompt){
+
+ }
 }
 });
