@@ -24,6 +24,7 @@ Template.rsvp.events({
 
   console.log("data", data);  
 
+  $("#myModal").modal('show');
  
   
 }
