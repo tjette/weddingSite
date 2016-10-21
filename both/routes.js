@@ -27,3 +27,11 @@ FlowRouter.route('/rsvp', {
  BlazeLayout.render('rsvp', {content: 'rsvp'});   
   }
 });
+
+FlowRouter.route('/rsvp/:id',{
+  action: function(params) {
+    var theRsvp = params.id
+    Session.set('theRsvp', theRsvp)
+    BlazeLayout.render('rsvpSnap', {content: 'rsvpSnap'});
+  }
+});
