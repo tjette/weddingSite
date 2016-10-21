@@ -38,14 +38,15 @@ Template.rsvp.events({
       confirmButtonColor: "#ec6c62"
     }, function(isConfirm) {
       if (isConfirm) {
-    swal("Deleted!", "Your imaginary file has been deleted.", "success");
+        Meteor.call('addRsvp',data);
+    swal("Submitted!", "Your RSVP has been submitted.", "success");
   } else {
     swal("Cancelled", "Your imaginary file is safe :)", "error");
   }
     });
   
   
-  Meteor.call('addRsvp',data);
+  
 
  
   // console.log("data", data);  
