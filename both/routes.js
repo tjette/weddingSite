@@ -30,10 +30,9 @@ FlowRouter.route('/rsvp', {
   }
 });
 
-FlowRouter.route('/rsvp/:id',{
-  action: function(params) {
-    var theRsvp = params.id
-    Session.set('theRsvp', theRsvp)
-    BlazeLayout.render('rsvpSnap', {content: 'rsvpSnap'});
+FlowRouter.route('/editRsvp',{
+  action: function(params,queryParams) {
+    Session.set('params', queryParams)
+      BlazeLayout.render('mainLayout', {content: 'editRsvp'});
   }
 });

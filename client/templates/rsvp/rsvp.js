@@ -1,76 +1,71 @@
 Template.rsvp.helpers({
-'rsvp': function(){
-  return Rsvp.find({'_id':Session.get('rsvp')}).fetch();
-},
-'totalRsvp':function(){
-  return Rsvp.find().count();
-},
-
-totalYes: function(){
-  return Rsvp.find({"email.attend": "yes"}).count();
-},
-totalNo: function(){
-  return Rsvp.find({"email.attend": "no"}).count();
-},
-'allRsvp':function(){
-  return Rsvp.find().fetch();
-}
-// 'attend': function(){
-//   return Rsvp.find({'attend})
-// }
+    'rsvp': function () {
+        return Rsvp.find({'_id': Session.get('rsvp')}).fetch();
+    },
+    'going': function(){
+        return Session.get('going');
+    }
 });
 
 
 Template.rsvp.events({
-"submit .rsvpForm": function(event, template){
-  event.preventDefault();
+    "submit .rsvpForm": function (event, template) {
+        event.preventDefault();
 
-  var title = event.target.title.value;
-  var email = event.target.email.value;
-  var firstName = event.target.firstName.value;
-  var lastName = event.target.lastName.value;
-  var attend = event.target.attend.value;
-  var party = event.target.party.value;
+        var formData = $(event.target).serializeArray();
 
-  var data = {
-    title : title,
-    email : email,
-    firstName : firstName,
-    lastName : lastName,
-    attend : attend,
-    party : party
-  }
+        console.log('formData',formData);
 
-    swal({
-      title: "Are you sure?", 
-      text: "Are you sure that this is correct?", 
-      type: "warning",
-      showCancelButton: true,
-      closeOnConfirm: false,
-      confirmButtonText: "Yes, looks good!",
-      confirmButtonColor: "#ec6c62"
-    }, function(isConfirm) {
-      if (isConfirm === true) {
-        Meteor.call('addRsvp',data);
-    swal("Submitted!", "Your RSVP has been submitted.", "success");
-  } else {
-    swal("Cancelled", "Your imaginary file is safe :)", "error");
-  }
-    });
-  
-  
-  
+        var rsvpObj = {};
 
- 
-  // console.log("data", data);  
+        _.each(formData, function(e){
+            console.log(e);
+            rsvpObj[e.name] = e.value || false;
 
-},
+        })
+        console.log(rsvpObj);
+        rsvpObj.submittedOn = new Date();
 
-'click .editRsvp': function(){
- var editPrompt= prompt("Please Enter Your Name");
 
- if(editPrompt){
+        swal({
+            title: "Are you sure?",
+            text: "Are you sure that this is correct?",
+            type: "warning",
+            showCancelButton: true,
+            closeOnConfirm: false,
+            confirmButtonText: "Yes, looks good!",
+            confirmButtonColor: "#ec6c62"
+        }, function (isConfirm) {
+            if (isConfirm === true) {
+                var rsvpId = Rsvp.insert(rsvpObj);
+                swal("Submitted!", "Your RSVP has been submitted.", "success");
+                emailObj = rsvpObj;
+                emailObj._id = rsvpId;
+                emailObj.subject = "Wedding RSVP Comfirmation: Travis Jette and Rachelle";
+                emailObj.message = emailObj.firstName + " - <br><br> Thank you for submitting the RSVP!  This is your official RSVP confirmation. <br><br> If at any time before the wedding you wish to edit or cancel your RSVP, click this link  <a href='http://localhost:7729/editRsvp?id="+ emailObj._id +"'>Change RSVP</a> <br><br> - Travis and Rachelle";
+                Meteor.call('sendEmail', emailObj)
+            } else {
+                swal("Cancelled", "Your RSVP has been cancelled", "error");
+            }
+        });
 
- }
-}
+
+
+        // console.log("data", data);
+
+    },
+
+    'change .attending':function(event, template){
+        console.log(event.target.value);
+
+        var going= event.target.value || false;
+
+        Session.set('going', going)
+    }
+});
+
+Template.rsvp.onCreated(function () {
+
+    Session.set('going', true);
+
 });

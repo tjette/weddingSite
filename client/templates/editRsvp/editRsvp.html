@@ -1,0 +1,40 @@
+<template name="editRsvp">
+<h3>Edit or Cancel RSVP</h3>
+<form class="editRsvp">
+    <div class="form-group">
+        <label>First Name</label>
+        <input type="text" class="form-control" name="firstName" value="{{thisRsvp.firstName}}" tabindex="1" placeholder="First Name">
+    </div>
+    <div class="form-group">
+        <label>Last Name</label>
+        <input type="text" class="form-control" name="lastName" value="{{thisRsvp.lastName}}" tabindex="2" placeholder="Last Name">
+    </div>
+    <div class="form-group">
+        <label for="title">Will You Be Able To Attend?</label>
+        <select class="form-control attending" id="selector" name="attend">
+
+            <option value="yes" tabindex="4">
+                I'll be there!
+            </option>
+            <option value="">
+                Decline with regret
+            </option>
+        </select>
+    </div>
+    {{#if going}}
+    <div class="form-group">
+        <label>Number in Party</label>
+        <input type="text" class="form-control" name="party" value="{{thisRsvp.party}}" tabindex="3" placeholder="">
+    </div>
+    {{/if}}
+    <div class="form-group">
+        <label>Email</label>
+        <input type="text" class="form-control" name="email" value="{{thisRsvp.email}}" tabindex="5" placeholder="Email">
+    </div>
+
+    <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="submit" class="btn btn-primary">Finish RSVP</button>
+    </div>
+    </form>
+</template>
