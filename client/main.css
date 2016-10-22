@@ -94,4 +94,9 @@ h1.registryHeader {
   text-align: center;
 }
 
+button.btn.btn-primary.btn-lg.rsvpStart {
+    margin: auto;
+    display: block;
+}
+
 
