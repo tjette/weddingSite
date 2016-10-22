@@ -2,9 +2,22 @@ Template.rsvp.helpers({
 'rsvp': function(){
   return Rsvp.find({'_id':Session.get('rsvp')}).fetch();
 },
+'totalRsvp':function(){
+  return Rsvp.find().count();
+},
+
+totalYes: function(){
+  return Rsvp.find({"email.attend": "yes"}).count();
+},
+totalNo: function(){
+  return Rsvp.find({"email.attend": "no"}).count();
+},
 'allRsvp':function(){
   return Rsvp.find().fetch();
 }
+// 'attend': function(){
+//   return Rsvp.find({'attend})
+// }
 });
 
 
@@ -37,7 +50,7 @@ Template.rsvp.events({
       confirmButtonText: "Yes, looks good!",
       confirmButtonColor: "#ec6c62"
     }, function(isConfirm) {
-      if (isConfirm) {
+      if (isConfirm === true) {
         Meteor.call('addRsvp',data);
     swal("Submitted!", "Your RSVP has been submitted.", "success");
   } else {

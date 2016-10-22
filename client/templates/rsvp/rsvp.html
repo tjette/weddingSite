@@ -12,7 +12,24 @@
   Start RSVP Process
 </button>
 </div>
+{{#each allRsvp}}
+<div class="container">
+  <button class="btn btn-primary" type="button">
+  RSVP's <span class="badge" value="">First Name {{email.firstName}}</span>
+                <span class="badge" value="">Number in Party {{email.party}}</span>
 
+</button>
+</div>
+{{/each}}
+<div class="container">
+<h3>Total RSVP: {{totalRsvp}}</h3>
+</div>
+<div class="container">
+<h3>Total Going: {{totalYes}}<i class="fa fa-calendar-check-o" aria-hidden="true"></i></h3>
+</div>
+<div class="container">
+<h3>Have Something Better To Do: {{totalNo}}<i class="fa fa-thumbs-down" aria-hidden="true"></i></h3>
+</div>
 
 
 <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
