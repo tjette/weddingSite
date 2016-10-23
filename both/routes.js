@@ -30,6 +30,12 @@ FlowRouter.route('/rsvp', {
   }
 });
 
+FlowRouter.route('/stripe', {
+    action: function() {
+ BlazeLayout.render('mainLayout', {content: 'stripe'});
+  }
+});
+
 FlowRouter.route('/editRsvp',{
   action: function(params,queryParams) {
     Session.set('params', queryParams)

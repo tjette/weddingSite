@@ -1,0 +1,31 @@
+<template name="stripe">
+  
+  <div class="row">
+    <div class="col-xs-12 col-md-6">
+      <img width="250" src="./images/hollandLakeFalls2.jpg" alt="Rachelle & Travis">
+      <h4 class="page-header">Rachelle & Travis 7/29</h4>
+      {{#unless processing}}
+        <p class="alert alert-info">If you couldn't find anything in the registry, we have the following gift options:</p>
+
+        <ul class="list-group price-list">
+          <li class="list-group-item clearfix">
+            <p class="pull-left"><strong>$50</strong> &mdash; Date Night</p>
+            <a href="#" data-service="Date Night" class="btn btn-success pull-right">Buy Now</a>
+          </li>
+          <li class="list-group-item clearfix">
+            <p class="pull-left"><strong>$50</strong> &mdash; Home Improvement</p>
+            <a href="#" data-service="Home Improvement" class="btn btn-success pull-right">Buy Now</a>
+          </li>
+          <li class="list-group-item clearfix">
+            <p class="pull-left"><strong>$75</strong> &mdash; Honey Moon</p>
+            <a href="#" data-service="Honey Moon" class="btn btn-success pull-right">Buy Now</a>
+          </li>
+        </ul>
+
+        <p class="alert alert-warning">To demo, use any email address along with the card number <strong>4242 4242 4242 4242</strong>, any <em>future</em> expiration date, and any 3 digit security code (e.g 555)</p>
+      {{else}}
+        <p class="alert alert-warning"><i class="fa fa-refresh fa-spin"></i> Processing payment...</p>
+      {{/unless}}
+    </div>
+  </div>
+</template>
