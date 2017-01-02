@@ -1,0 +1,26 @@
+<template name="map">  
+  <div class="map-container">
+
+
+    {{#if howLong}}
+    <div class="row">
+      <div class="col-sm-12">
+        <div class="lead">
+          It will take you {{howLong}} to drive to our wedding. 
+          <br><a  href="#" class="changeDest btn btn-xs btn-default">Change Start Address</a>
+        </div>
+      </div>
+      
+    </div>
+    {{else}}
+    <div class="form-group">
+     <input id="start" name="origin" value="" class="controls" type="text"
+        placeholder="Enter an origin location">   
+      <button class="getDirections" id="end" value="33213 S Finley Point Rd, Polson, MT 59860">Get Directions to Barn</button>
+    </div>
+    <hr>
+    {{/if}}
+{{> googleMap name="map" options=mapOptions}}
+<div class="row" id="setPanel">Directions: </div>
+   </div>
+</template>  
