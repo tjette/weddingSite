@@ -3,6 +3,8 @@ Meteor.startup(function() {
   GoogleMaps.load({ v: '3', key: 'AIzaSyBUhEuldyQLiY6_by9NTqLi9Bhr25-tHgc', libraries: 'places'});
 
 });
+
+
 Template.map.helpers({  
 'howLong':function(){
   return Session.get('directions').routes[0].legs[0].duration.text
@@ -27,6 +29,7 @@ Template.map.events({
 },  
 'click .getDirections': function(event, template){
   event.preventDefault();
+
   map = GoogleMaps.maps.map
   var directionsDisplay;
   var directionsService = new google.maps.DirectionsService();
@@ -76,5 +79,13 @@ Template.map.onCreated(function() {
       position: map.options.center,
       map: map.instance
     })
+  });
+});
+
+Template.map.onRendered(function() {
+  this.autorun(function () {
+    if (GoogleMaps.loaded()) {
+      $("#start").geocomplete();
+    }
   });
 });

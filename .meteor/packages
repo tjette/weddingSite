@@ -32,3 +32,4 @@ reactive-dict@1.1.8
 check@1.2.4
 dburles:google-maps
 mrgalaxy:stripe
+jeremy:geocomplete
