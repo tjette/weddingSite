@@ -7,6 +7,7 @@ Template.home.events({
 });
 
 Template.home.onRendered(function(){
+AOS.init();
 var weddingDate = new Date("07/29/2017 3:0 PM");
     
     var currentDate = new Date();
@@ -31,4 +32,5 @@ var weddingDate = new Date("07/29/2017 3:0 PM");
 
 
     }
+    
 });
