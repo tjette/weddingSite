@@ -81,3 +81,7 @@ Template.rsvp.onCreated(function () {
     Session.set('going', true);
 
 });
+
+Template.rsvp.onRendered(function(){
+    AOS.init();
+})
