@@ -121,7 +121,7 @@ Template.home.events({
 });
 
 Template.home.onRendered(function(){
-AOS.init();
+
 
     
 });

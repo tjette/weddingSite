@@ -1,0 +1,1 @@
+DEPLOY_HOSTNAME=galaxy.meteor.com meteor deploy rachelleandtravis --settings settings.json
