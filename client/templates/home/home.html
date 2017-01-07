@@ -1,17 +1,45 @@
 <template name="home">
 
-    <div class="heading Tangerine">
-    <div>{{>countdown}}</div>
+    <div class="heading jumbotron text-center">
 
-    <h1> Turning Stone To JETTE!</h1>
-        <h3 class="header" id="homeHeader">
-            {{weddingCountdown}} 
-        </h3>
-        {{>rsvpStats}}
+    <h1 class=""> Turning Stone To Jette!</h1>
+        <p class="lead" id="homeHeader">
+        <div class="countDown">
+        <div class="row">
+        <div class="col-sm-3">
+            <div class="integer">
+                <div class="teal number">{{days}}</div>
+                <div class="text-muted smally">Days</div>
+            </div>
+        </div>
+        <div class="col-sm-3">
+            <div class="integer">
+                <div class="teal number">{{hours}}</div>
+                <div class="text-muted smally">Hours</div>
+            </div>
+        </div>
+        <div class="col-sm-3">
+            <div class="integer">
+                <div class="teal number">{{minutes}}</div>
+                <div class="text-muted smally">Minutes</div>
+            </div>
+        </div>
+        <div class="col-sm-3">
+            <div class="integer">
+                <div class="teal number">{{seconds}}</div>
+                <div class="text-muted smally">Seconds</div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+        </p>
+        <a href="/rsvp" class="btn btn-doggie btn-lg btn-default">RSVP Now</a>
+        <!--{{>rsvpStats}}-->
     </div>
 
 
-    <img class="homeImage" data-aos="flip-left"  src="./images/barnAtFinleyPoint2.jpg">
+    <!--<img class="homeImage" style="min-width: 100%" data-aos="flip-left"  src="./images/barnAtFinleyPoint2.jpg">-->
     <!-- <img class="homeImage" src="./images/hollandLakeFalls2.jpg">
      --><!-- <img class="homeImage" id="thirdImage" src="./images/engagement2.jpg">
  -->

@@ -4,5 +4,11 @@
       "MONGO_URL":"mongodb://travisjette:travis123@jello.modulusmongo.net:27017/uPuqy7vy",
       "ROOT_URL":"https://rachelleandtravis.meteorapp.com"
     }
+  },
+  "public": {
+    "stripe": "pk_test_P5VCIAn9TaffqxE4GCmedQps"
+  },
+  "private": {
+    "stripe": "sk_test_PLEp1LJbTXXO0940yTtrQEAL"
   }
 }

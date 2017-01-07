@@ -17,12 +17,23 @@ Template.rsvp.events({
         console.log('formData',formData);
 
         var rsvpObj = {};
-
+        Session.set('hasErrors',false)
         _.each(formData, function(e){
             console.log(e);
-            rsvpObj[e.name] = e.value || false;
+            if(e.value) {
+
+
+                rsvpObj[e.name] = e.value || false;
+            }else {
+                alert("You are missing " + e.name);
+                Session.set('hasErrors',true);
+            }
 
         })
+
+        if(Session.get('hasErrors')){
+            return false
+        }
         console.log(rsvpObj);
         rsvpObj.submittedOn = new Date();
 
@@ -44,6 +55,7 @@ Template.rsvp.events({
                 emailObj.subject = "Wedding RSVP Comfirmation: Travis Jette and Rachelle";
                 emailObj.message = emailObj.firstName + " - <br><br> Thank you for submitting the RSVP!  This is your official RSVP confirmation. <br><br> If at any time before the wedding you wish to edit or cancel your RSVP, click this link  <a href='http://localhost:3000/editRsvp?id="+ emailObj._id +"'>Change RSVP</a> <br><br> - Travis and Rachelle";
                 Meteor.call('sendEmail', emailObj)
+                FlowRouter.go('/details')
             } else {
                 swal("Cancelled", "Your RSVP has been cancelled", "error");
             }

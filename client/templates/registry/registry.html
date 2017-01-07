@@ -1,12 +1,15 @@
 <template name="registry">
-
+<div class="pageContent registry" data-aos="flip-left">
     <h1 class="registryHeader">Registry Options
         <span class="glyphicon glyphicon-gift"></span>
     </h1>
     <ul class="list-unstyled">
-    <li class="alert alert-info">1. Target</li>
-    <li class="alert alert-info" >2. Bed Bath and Beyond</li>
-    <li class="alert alert-info">3. Provide money towards honey moon, home improvement, or date night (look below)</li>
+    <li><a href="https://www.target.com" class="alert alert-info btn btn-default">1. Target</a></li>
+    <li><a href="https://www.bedbathandbeyond.com/" class="alert alert-info btn btn-default" >2. Bed Bath and Beyond</a></li>
+    <li><a href="#" class="alert alert-info btn btn-default">3. Provide money towards honey moon, home improvement, or date night (look below) <i class="fa fa-arrow-down" aria-hidden="true"></i>
+    </a></li>
 {{>stripe}}
     </ul>
+
+</div>
 </template>

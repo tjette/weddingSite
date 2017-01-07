@@ -47,7 +47,7 @@ Template.stripe.onCreated(function(){
   template.processing       = new ReactiveVar( false );
 
   template.checkout = StripeCheckout.configure({
-    key: Meteor.settings.public.stripe,
+    key: 'pk_test_P5VCIAn9TaffqxE4GCmedQps',
     image: './images/engagement1.jpg',
     locale: 'auto',
     token( token ) {

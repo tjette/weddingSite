@@ -1,4 +1,4 @@
-// var Stripe = StripeAPI( Meteor.settings.private.stripe );
+Stripe = StripeAPI( 'sk_test_PLEp1LJbTXXO0940yTtrQEAL' );
 
 Meteor.methods({
   sendEmail: function (emailObj) {

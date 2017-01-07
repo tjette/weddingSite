@@ -1,6 +1,6 @@
 
 var weddingDate = new Date("07/29/2017 3:0 PM");
-var countdown = new ReactiveCountdown(weddingDate);
+countdown = new ReactiveCountdown(weddingDate);
 
 
 countdown.start(function() {
@@ -11,11 +11,12 @@ countdown.start(function() {
 
 Template.countdown.helpers({
 
-    // formatDate: function(date){
-    //   return moment(date).format('DD-HH-MM-SS');
-    // },
+     //formatDate: function(date){
+     //  return moment(date).format('DD-HH-MM-SS');
+     //},
 
     getCountdown: function() {
+        Session.set('count',countdown);
         return countdown.get();
     }
 

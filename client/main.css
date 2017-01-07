@@ -1,4 +1,4 @@
-.Tangerine {
+.fancy {
   font-family: 'Tangerine', cursive;
 }
 .princess{
@@ -9,12 +9,103 @@
   font-family: 'Dancing Script', cursive;
 }
 
-.plum{
-  background-color: #DDA0DD;
+.plumy{
+  color: #DDA0DD;
 }
 
 .map-container {
   width: 100%;
   max-width: 100%;
-  height: 500px;
+  height: 300px;
 }
+
+div#__blaze-root {
+  background: ir;
+  background: url(/images/us.jpg)!important;
+  min-height: 100vh;
+  background-size: cover!important;
+  background-repeat: no-repeat!important;
+  background-attachment: fixed!important;
+}
+.heading.jumbotron.text-center {
+  background: rgba(0, 0, 0, 0.73);
+  color: white;
+  border-radius: 0px;
+}
+nav.navbar.navbar-default.navbar-static-top.Tangerine a {
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+nav.navbar.navbar-default.navbar-static-top.Tangerine {
+  background-color: #00BCD4;
+  color: white;
+}
+nav.navbar.navbar-default.navbar-static-top.Tangerine {
+  margin-top: 10px;
+  border: none;
+  background-color: rgba(0, 188, 212, 0.46);
+}
+nav.navbar.navbar-default.navbar-static-top.Tangerine {
+  background-color: rgba(0, 188, 212, 0.46);
+  color: white;
+}
+ul.nav.navbar-nav.navbar-right {
+  padding-right: 20px;
+}@font-face{font-family:"TT Rounds Condensed Bold";src:url(/TTRoundsCondensed-Bold.woff2)}
+
+
+
+h1,.lead,b,.btn,.progress {
+  font-family: "TT Rounds Condensed Bold";
+
+}
+div,p,a{
+  font-family: "TT Rounds Condensed Regular";
+}
+@import url(https://fonts.googleapis.com/css?family=Quicksand:400,300);
+body{
+  font-family: 'Quicksand', sans-serif;
+}.button,[type=button],button{-webkit-appearance:none}[type=button],button{-moz-appearance:none}img,video{display:inline-block}h1,h3,h4,p{text-rendering:optimizeLegibility}.button,body{text-align:left}@font-face{font-family:"TT Rounds Condensed Bold";src:url(https://myeatclub.a.ssl.fastly.net/icecubestatic/global/webfonts/TTRoundsCondensed-Bold.woff2) format("woff2"),url(https://myeatclub.a.ssl.fastly.net/icecubestatic/global/webfonts/TTRoundsCondensed-Bold.woff) format("woff"),url(https://myeatclub.a.ssl.fastly.net/icecubestatic/global/webfonts/TTRoundsCondensed-Bold.ttf) format("truetype");font-weight:600;font-style:normal}@font-face{font-family:"TT Rounds Condensed Regular";src:url(https://myeatclub.a.ssl.fastly.net/icecubestatic/global/webfonts/TTRoundsCondensed-Regular.woff2) format("woff2"),url(https://myeatclub.a.ssl.fastly.net/icecubestatic/global/webfonts/TTRoundsCondensed-Regular.woff) format("woff"),url(https://myeatclub.a.ssl.fastly.net/icecubestatic/global/webfonts/TTRoundsCondensed-Regular.ttf)}
+
+div#__blaze-root {
+  background: url(images/us.jpg)!important;
+  min-height: 100vh;
+  background-size: cover!important;
+  background-repeat: no-repeat!important;
+  background-attachment: fixed!important;
+  background-position: 0px -254px!important;
+}
+
+a.btn.btn-doggie.btn-lg.btn-default {
+  border-radius: 0px;
+  border: none;
+  width: 300px;
+  text-transform: uppercase;
+  background: rgba(0, 188, 212, 0.75);
+  color: white;
+  letter-spacing: 8px;
+  font-size: 24px;
+  margin-top: 22px;
+}.teal.number {
+   color: #00BCD4;
+   font-size: 35px;
+ }.countDown {
+    background: rgba(0, 0, 0, 0.56);
+    padding: 29px;
+  }h1 {
+     text-transform: uppercase;
+     letter-spacing: 8px;
+     font-size: 50px!important;
+   }.pageContent {
+      background: rgba(255, 255, 255, 0.92);
+      padding: 35px;
+      padding-top: 5px;
+    }.pageContent h1 {
+       text-align: center;
+       margin-bottom: 24px;
+       background: #795548;
+       padding: 16px;
+       color: white;
+     }
