@@ -69,12 +69,12 @@ div,p,a{
 .button,[type=button],button{-webkit-appearance:none}[type=button],button{-moz-appearance:none}img,video{display:inline-block}h1,h3,h4,p{text-rendering:optimizeLegibility}.button,body{text-align:left}@font-face{font-family:"TT Rounds Condensed Bold";src:url(https://myeatclub.a.ssl.fastly.net/icecubestatic/global/webfonts/TTRoundsCondensed-Bold.woff2) format("woff2"),url(https://myeatclub.a.ssl.fastly.net/icecubestatic/global/webfonts/TTRoundsCondensed-Bold.woff) format("woff"),url(https://myeatclub.a.ssl.fastly.net/icecubestatic/global/webfonts/TTRoundsCondensed-Bold.ttf) format("truetype");font-weight:600;font-style:normal}@font-face{font-family:"TT Rounds Condensed Regular";src:url(https://myeatclub.a.ssl.fastly.net/icecubestatic/global/webfonts/TTRoundsCondensed-Regular.woff2) format("woff2"),url(https://myeatclub.a.ssl.fastly.net/icecubestatic/global/webfonts/TTRoundsCondensed-Regular.woff) format("woff"),url(https://myeatclub.a.ssl.fastly.net/icecubestatic/global/webfonts/TTRoundsCondensed-Regular.ttf)}
 
 div#__blaze-root {
-  background: url(images/us.jpg)!important;
+  background: url(images/us3.jpg)!important;
   min-height: 100vh;
   background-size: cover!important;
   background-repeat: no-repeat!important;
   background-attachment: fixed!important;
-  background-position: 0px -254px!important;
+  /*background-position: 0px -290px!important;*/
 }
 
 a.btn.btn-doggie.btn-lg.btn-default {
@@ -110,7 +110,7 @@ a.btn.btn-doggie.btn-lg.btn-default {
      }
 @media(max-width:600px){
     div#__blaze-root {
-        background: url(images/us.jpg)!important;
+        background: url(images/us3.jpg)!important;
         min-height: 100vh;
         background-size: cover!important;
         background-repeat: no-repeat!important;
@@ -128,4 +128,23 @@ a.btn.btn-doggie.btn-lg.btn-default {
            width: 100%;
            font-weight: bold;
        }
+}
+.heading.jumbotron.text-center.aos-init.aos-animate {
+    margin: 280px;
+    margin-top: 284px;
+    background: transparent;
+    color: black;
+}
+.countDown {
+    background: rgba(0, 0, 0, 0.89);
+    padding: 29px;
+    margin-top: 123px;
+}
+a {
+    color: brown;
+    margin: 22px;
+}
+button.dropdown-toggle {
+    margin-top: 15px;
+    margin-bottom: 1px;
 }

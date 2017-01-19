@@ -37,7 +37,6 @@
         <item url="file://$USER_HOME$/.meteor/packages/spacebars-compiler/1.0.13/web.browser/compiler.js" />
         <item url="file://$USER_HOME$/.meteor/packages/mongo-id/1.0.6/web.browser/id.js" />
         <item url="file://$USER_HOME$/.meteor/packages/spacebars-compiler/1.0.13/web.browser/react.js" />
-        <item url="file://$USER_HOME$/.meteor/packages/momentjs_moment/2.10.6/web.browser/packages/momentjs_moment.js" />
         <item url="file://$USER_HOME$/.meteor/packages/spacebars/1.0.13/web.browser/spacebars-runtime.js" />
         <item url="file://$USER_HOME$/.meteor/packages/modules-runtime/0.7.7/web.browser/.npm/package/node_modules/install/install.js" />
         <item url="file://$USER_HOME$/.meteor/packages/modules-runtime/0.7.7/web.browser/modules-runtime.js" />
@@ -68,12 +67,9 @@
         <item url="file://$USER_HOME$/.meteor/packages/logging/1.1.16/web.browser/logging_test.js" />
         <item url="file://$USER_HOME$/.meteor/packages/jquery/1.11.10/web.browser/main.js" />
         <item url="file://$USER_HOME$/.meteor/packages/jquery/1.11.10/web.browser/jquery.js" />
-        <item url="file://$USER_HOME$/.meteor/packages/jeremy_geocomplete/1.6.5_11/web.browser/lib/jquery.geocomplete.js" />
         <item url="file://$USER_HOME$/.meteor/packages/id-map/1.0.9/web.browser/id-map.js" />
         <item url="file://$USER_HOME$/.meteor/packages/geojson-utils/1.0.10/web.browser/main.js" />
         <item url="file://$USER_HOME$/.meteor/packages/geojson-utils/1.0.10/web.browser/geojson-utils.js" />
-        <item url="file://$USER_HOME$/.meteor/packages/fortawesome_fontawesome/4.4.0/web.browser/packages/fortawesome_fontawesome/upstream/css/font-awesome.css" />
-        <item url="file://$USER_HOME$/.meteor/packages/fortawesome_fontawesome/4.4.0/web.browser/packages/fortawesome_fontawesome.js" />
         <item url="file://$USER_HOME$/.meteor/packages/fastclick/1.0.13/web.browser/fastclick.js" />
         <item url="file://$USER_HOME$/.meteor/packages/fastclick/1.0.13/web.browser/post.js" />
         <item url="file://$USER_HOME$/.meteor/packages/fastclick/1.0.13/web.browser/pre.js" />
@@ -119,7 +115,11 @@
         <item url="file://$USER_HOME$/.meteor/packages/random/1.0.10/web.browser/random.js" />
         <item url="file://$USER_HOME$/.meteor/packages/random/1.0.10/web.browser/random_tests.js" />
         <item url="file://$USER_HOME$/.meteor/packages/random/1.0.10/web.browser/deprecated.js" />
+        <item url="file://$USER_HOME$/.meteor/packages/momentjs_moment/2.15.2/web.browser/meteor/export.js" />
+        <item url="file://$USER_HOME$/.meteor/packages/momentjs_moment/2.15.2/web.browser/moment.js" />
         <item url="file://$USER_HOME$/.meteor/packages/caching-html-compiler/1.0.7/web.browser/caching-html-compiler.js" />
+        <item url="file://$USER_HOME$/.meteor/packages/jeremy_geocomplete/1.7.0/web.browser/lib/jquery.geocomplete.js" />
+        <item url="file://$USER_HOME$/.meteor/packages/fortawesome_fontawesome/4.7.0/web.browser/upstream/css/font-awesome.css" />
         <item url="file://$USER_HOME$/.meteor/packages/blaze-tools/1.0.10/web.browser/preamble.js" />
         <item url="file://$USER_HOME$/.meteor/packages/blaze-tools/1.0.10/web.browser/tojs.js" />
         <item url="file://$USER_HOME$/.meteor/packages/blaze-tools/1.0.10/web.browser/tokens.js" />
@@ -199,7 +199,6 @@
       <root url="file://$USER_HOME$/.meteor/packages/spacebars-compiler/1.0.13/web.browser/compiler.js" />
       <root url="file://$USER_HOME$/.meteor/packages/mongo-id/1.0.6/web.browser/id.js" />
       <root url="file://$USER_HOME$/.meteor/packages/spacebars-compiler/1.0.13/web.browser/react.js" />
-      <root url="file://$USER_HOME$/.meteor/packages/momentjs_moment/2.10.6/web.browser/packages/momentjs_moment.js" />
       <root url="file://$USER_HOME$/.meteor/packages/spacebars/1.0.13/web.browser/spacebars-runtime.js" />
       <root url="file://$USER_HOME$/.meteor/packages/modules-runtime/0.7.7/web.browser/.npm/package/node_modules/install/install.js" />
       <root url="file://$USER_HOME$/.meteor/packages/modules-runtime/0.7.7/web.browser/modules-runtime.js" />
@@ -230,12 +229,9 @@
       <root url="file://$USER_HOME$/.meteor/packages/logging/1.1.16/web.browser/logging_test.js" />
       <root url="file://$USER_HOME$/.meteor/packages/jquery/1.11.10/web.browser/main.js" />
       <root url="file://$USER_HOME$/.meteor/packages/jquery/1.11.10/web.browser/jquery.js" />
-      <root url="file://$USER_HOME$/.meteor/packages/jeremy_geocomplete/1.6.5_11/web.browser/lib/jquery.geocomplete.js" />
       <root url="file://$USER_HOME$/.meteor/packages/id-map/1.0.9/web.browser/id-map.js" />
       <root url="file://$USER_HOME$/.meteor/packages/geojson-utils/1.0.10/web.browser/main.js" />
       <root url="file://$USER_HOME$/.meteor/packages/geojson-utils/1.0.10/web.browser/geojson-utils.js" />
-      <root url="file://$USER_HOME$/.meteor/packages/fortawesome_fontawesome/4.4.0/web.browser/packages/fortawesome_fontawesome/upstream/css/font-awesome.css" />
-      <root url="file://$USER_HOME$/.meteor/packages/fortawesome_fontawesome/4.4.0/web.browser/packages/fortawesome_fontawesome.js" />
       <root url="file://$USER_HOME$/.meteor/packages/fastclick/1.0.13/web.browser/fastclick.js" />
       <root url="file://$USER_HOME$/.meteor/packages/fastclick/1.0.13/web.browser/post.js" />
       <root url="file://$USER_HOME$/.meteor/packages/fastclick/1.0.13/web.browser/pre.js" />
@@ -281,7 +277,11 @@
       <root url="file://$USER_HOME$/.meteor/packages/random/1.0.10/web.browser/random.js" />
       <root url="file://$USER_HOME$/.meteor/packages/random/1.0.10/web.browser/random_tests.js" />
       <root url="file://$USER_HOME$/.meteor/packages/random/1.0.10/web.browser/deprecated.js" />
+      <root url="file://$USER_HOME$/.meteor/packages/momentjs_moment/2.15.2/web.browser/meteor/export.js" />
+      <root url="file://$USER_HOME$/.meteor/packages/momentjs_moment/2.15.2/web.browser/moment.js" />
       <root url="file://$USER_HOME$/.meteor/packages/caching-html-compiler/1.0.7/web.browser/caching-html-compiler.js" />
+      <root url="file://$USER_HOME$/.meteor/packages/jeremy_geocomplete/1.7.0/web.browser/lib/jquery.geocomplete.js" />
+      <root url="file://$USER_HOME$/.meteor/packages/fortawesome_fontawesome/4.7.0/web.browser/upstream/css/font-awesome.css" />
       <root url="file://$USER_HOME$/.meteor/packages/blaze-tools/1.0.10/web.browser/preamble.js" />
       <root url="file://$USER_HOME$/.meteor/packages/blaze-tools/1.0.10/web.browser/tojs.js" />
       <root url="file://$USER_HOME$/.meteor/packages/blaze-tools/1.0.10/web.browser/tokens.js" />

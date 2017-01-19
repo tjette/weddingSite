@@ -8,7 +8,10 @@ Meteor.startup(function() {
 Template.map.helpers({  
 'howLong':function(){
   return Session.get('directions').routes[0].legs[0].duration.text
-},  
+},
+  //directionsHTML: function(){
+  //  return Session.get('directionsHTML');
+  //},
 mapOptions: function() {
     if (GoogleMaps.loaded()) {
       return {
@@ -43,14 +46,16 @@ Template.map.events({
   }
 
   directionsDisplay.setMap(map.instance);
+  $('#setPanel').html('');
+  //Session.set("directionsHTML", directionsDisplay)
   directionsDisplay.setPanel(document.getElementById('setPanel'));
 
 
   var start = document.getElementById('start').value;
-  var end = document.getElementById('end').value;
+
   var request = {
     origin: start,
-    destination: end,
+    destination: barn,
     travelMode: 'DRIVING'
   };
 

@@ -13,21 +13,23 @@
       
     </div>
     {{else}}
-        <div class="addressForm">
+
+    {{/if}}
+    <div class="addressForm {{#if howLong}}hidden{{/if}}">
 
 
         <div class="row">
             <div class="col-sm-4">
                 <input id="start" name="origin" value="" size="50" class="form-control" type="text"
                        placeholder="Enter a starting address">
+
             </div>
             <div class="col-sm-8">
                 <button class="getDirections btn btn-primary" id="end" value="33213 S Finley Point Rd, Polson, MT 59860">Get Directions to Barn</button>
             </div>
         </div>
-        </div>
+    </div>
     <hr>
-    {{/if}}
       <div class="row">
           <div class="col-sm-6">
               <div class="map-container">
@@ -35,6 +37,7 @@
                   </div>
           </div>
           <div class="col-sm-6">
+
               <div id="setPanel">Directions: </div>
           </div>
       </div>
