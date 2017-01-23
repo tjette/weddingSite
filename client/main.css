@@ -18,10 +18,18 @@
   max-width: 100%;
   height: 300px;
 }
+.text-muted {
+    color: #777;
+    font-size: 14px;
+}
+.jumbotron h1, .jumbotron .h1 {
+    color: white;
+    font-size: 29px;
+}
 
 div#__blaze-root {
   background: ir;
-  background: url(/images/us.jpg)!
+  background: url(/images/reflection.jpg)!
   ant;
   min-height: 100vh;
   background-size: cover!important;
@@ -35,8 +43,8 @@ div#__blaze-root {
 }
 nav.navbar.navbar-default.navbar-static-top.Tangerine a {
   color: white;
-  text-transform: uppercase;
-  letter-spacing: 2px;
+  /*text-transform: uppercase;*/
+  /*letter-spacing: 2px;*/
 }
 
 nav.navbar.navbar-default.navbar-static-top.Tangerine {
@@ -69,7 +77,7 @@ div,p,a{
 .button,[type=button],button{-webkit-appearance:none}[type=button],button{-moz-appearance:none}img,video{display:inline-block}h1,h3,h4,p{text-rendering:optimizeLegibility}.button,body{text-align:left}@font-face{font-family:"TT Rounds Condensed Bold";src:url(https://myeatclub.a.ssl.fastly.net/icecubestatic/global/webfonts/TTRoundsCondensed-Bold.woff2) format("woff2"),url(https://myeatclub.a.ssl.fastly.net/icecubestatic/global/webfonts/TTRoundsCondensed-Bold.woff) format("woff"),url(https://myeatclub.a.ssl.fastly.net/icecubestatic/global/webfonts/TTRoundsCondensed-Bold.ttf) format("truetype");font-weight:600;font-style:normal}@font-face{font-family:"TT Rounds Condensed Regular";src:url(https://myeatclub.a.ssl.fastly.net/icecubestatic/global/webfonts/TTRoundsCondensed-Regular.woff2) format("woff2"),url(https://myeatclub.a.ssl.fastly.net/icecubestatic/global/webfonts/TTRoundsCondensed-Regular.woff) format("woff"),url(https://myeatclub.a.ssl.fastly.net/icecubestatic/global/webfonts/TTRoundsCondensed-Regular.ttf)}
 
 div#__blaze-root {
-  background: url(images/us3.jpg)!important;
+  background: url(images/reflection.jpg)!important;
   min-height: 100vh;
   background-size: cover!important;
   background-repeat: no-repeat!important;
@@ -78,25 +86,24 @@ div#__blaze-root {
 }
 
 a.btn.btn-doggie.btn-lg.btn-default {
-  border-radius: 0px;
-  border: none;
-  width: 300px;
-  text-transform: uppercase;
-  background: rgba(0, 188, 212, 0.75);
-  color: white;
-  letter-spacing: 8px;
-  font-size: 24px;
-  margin-top: 22px;
+    border-radius: 0px;
+    border: none;
+    /* width: 300px; */
+    text-transform: uppercase;
+    background: rgba(0, 188, 212, 0.75);
+    color: white;
+    letter-spacing: 8px;
+    /* font-size: 24px; */
+    /* margin-top: 22px; */
 }.teal.number {
    color: #00BCD4;
    font-size: 35px;
  }.countDown {
     background: rgba(0, 0, 0, 0.56);
-    padding: 29px;
   }h1 {
      text-transform: uppercase;
      letter-spacing: 8px;
-     font-size: 50px!important;
+     /*font-size: 50px!important;*/
    }.pageContent {
       background: rgba(255, 255, 255, 0.92);
       padding: 35px;
@@ -108,9 +115,12 @@ a.btn.btn-doggie.btn-lg.btn-default {
        padding: 16px;
        color: white;
      }
-@media(max-width:600px){
+     .heading.jumbotron.text-center.aos-init.aos-animate {
+    margin: auto!important;
+}
+@media(min-width:600px){
     div#__blaze-root {
-        background: url(images/us3.jpg)!important;
+        background: url(images/reflection.jpg)!important;
         min-height: 100vh;
         background-size: cover!important;
         background-repeat: no-repeat!important;
@@ -131,15 +141,12 @@ a.btn.btn-doggie.btn-lg.btn-default {
 }
 .heading.jumbotron.text-center.aos-init.aos-animate {
     margin: 280px;
-    margin-top: 284px;
+    width: 51%;
+    margin-top: 180px;
     background: transparent;
     color: black;
 }
-.countDown {
-    background: rgba(0, 0, 0, 0.89);
-    padding: 29px;
-    margin-top: 123px;
-}
+
 a {
     color: brown;
     margin: 22px;
@@ -148,3 +155,99 @@ button.dropdown-toggle {
     margin-top: 15px;
     margin-bottom: 1px;
 }
+/*@media screen and (min-width: 768px){
+
+.jumbotron h1, .jumbotron .h1 {
+    margin-bottom: -126px;
+    font-size: 24px!important;
+    color: white;
+}
+.heading.jumbotron.text-center.aos-init.aos-animate {
+    margin: 280px;
+    width: 51%;
+    margin-top: 180px;
+    background: transparent;
+    color: black;
+}
+}*/
+@media(min-width:768px){
+    div#__blaze-root {
+        background: url(images/reflection.jpg)!important;
+        min-height: 100vh;
+        background-size: cover!important;
+        background-repeat: no-repeat!important;
+        background-attachment: fixed!important;
+        background-position: 0px!important;
+    }h1 {
+         font-size: 26px!important;
+    }
+    ul.nav.navbar-nav.navbar-right {
+    padding: 0px;
+    display: block;
+    float: none!important;
+    width: 100%!important;
+}a.navbar-brand {
+           display: block;
+           width: 100%;
+           font-weight: bold;
+       }
+
+.jumbotron h1, .jumbotron .h1 {
+    /* margin-top: 100px!important; */
+    /* margin-bottom: -144px; */
+    font-size: 29px!important;
+    /* margin-left: 200px!important; */
+    color: white;
+    margin: auto!important;
+}
+.countDown {
+    background: rgba(0, 0, 0, 0.72);
+    /* margin: auto!important; */
+     padding: 25px; 
+    /*margin-top: 171px;*/
+    /* margin-left: -147px!important; */
+    /* width: 155%!important; */
+}
+a.btn.btn-doggie.btn-lg.btn-default {
+    border-radius: 0px;
+    border: none;
+    /*width: 293px;*/
+    text-transform: uppercase;
+    background: rgba(0, 188, 212, 0.72);
+    color: white;
+    letter-spacing: 8px;
+    font-size: 24px;
+    margin: auto!important;
+    /* margin-top: 22px; */
+    /* margin-left: 125px; */
+}
+.heading.jumbotron.text-center.aos-init.aos-animate {
+    /* margin: auto!important; */
+    /* width: 50%; */
+    /* margin-bottom: 176px; */
+    background: transparent;
+    color: black;
+}
+}
+
+@media screen and (min-width: 1000px){
+
+.jumbotron h1, .jumbotron .h1 {
+    /* margin-top: 100px!important; */
+    /* margin-bottom: -144px; */
+    font-size: 29px!important;
+    /* margin-left: 200px!important; */
+    color: white;
+    margin: auto!important;
+}
+.heading.jumbotron.text-center.aos-init.aos-animate {
+    /* margin: auto!important; */
+    /* width: 50%; */
+    /* margin-bottom: 176px; */
+    background: transparent;
+    color: black;
+}
+
+}
+
+
