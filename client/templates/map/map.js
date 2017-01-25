@@ -49,6 +49,7 @@ Template.map.events({
   $('#setPanel').html('');
   //Session.set("directionsHTML", directionsDisplay)
   directionsDisplay.setPanel(document.getElementById('setPanel'));
+  console.log(directionsDisplay);
 
 
   var start = document.getElementById('start').value;
@@ -58,6 +59,7 @@ Template.map.events({
     destination: barn,
     travelMode: 'DRIVING'
   };
+Meteor.call('guestDistance', request);
 
   console.log("request", request);
 

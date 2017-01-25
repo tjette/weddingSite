@@ -19,6 +19,11 @@ Meteor.methods({
   removeRsvp: function(){
     return Rsvp.remove({});
   },
+  guestDistance: function(distance){
+    return Route.insert({
+      distance: distance
+    });
+  },
   
   processPayment: function( charge ) {
     check( charge, {
