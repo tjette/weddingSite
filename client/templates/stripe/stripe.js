@@ -12,15 +12,15 @@ Template.stripe.events({
   'click [data-service]' ( event, template ) {
     const pricing = {
       'Date Night': {
-        amount: 5000,
+        amount: 2500,
         description: "Gift towards a date"
       },
       'Home Improvement': {
-        amount: 5000,
+        amount: 2500,
         description: "Home improvements that are necessaary"
       },
       'Honey Moon': {
-        amount: 7500,
+        amount: 5000,
         description: "Help us take a trip to celebrate our marriage"
       }
     };
@@ -33,8 +33,7 @@ Template.stripe.events({
     template.checkout.open({
       name: 'Rachelle & Travis Wedding',
       description: service.description,
-      amount: service.amount,
-      bitcoin: true
+      amount: service.amount
     });
   }
 });
