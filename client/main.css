@@ -24,8 +24,20 @@
 }
 .jumbotron h1, .jumbotron .h1 {
     color: white;
-    font-size: 29px;
+    font-size: 18px;
 }
+i#honey {
+    margin-left: -70px;
+}
+i#home {
+    margin-left: -111px;
+    margin-top: 15px;
+}
+i#date {
+    margin-left: -60px;
+    margin-top: 23px;
+}
+
 
 div#__blaze-root {
   background: ir;
@@ -93,6 +105,7 @@ a.btn.btn-doggie.btn-lg.btn-default {
     background: rgba(0, 188, 212, 0.75);
     color: white;
     letter-spacing: 8px;
+    margin-left: -13px!important;
     /* font-size: 24px; */
     /* margin-top: 22px; */
 }.teal.number {
@@ -145,6 +158,9 @@ a.btn.btn-doggie.btn-lg.btn-default {
     margin-top: 180px;
     background: transparent;
     color: black;
+}
+li.list-group-item.clearfix.registry {
+    margin-bottom: 8px;
 }
 
 a {
@@ -227,6 +243,10 @@ a.btn.btn-doggie.btn-lg.btn-default {
     /* margin-bottom: 176px; */
     background: transparent;
     color: black;
+    margin-top: 215px!important;
+}
+li.list-group-item.clearfix.registry {
+    margin-bottom: 8px;
 }
 }
 
@@ -238,7 +258,7 @@ a.btn.btn-doggie.btn-lg.btn-default {
     font-size: 29px!important;
     /* margin-left: 200px!important; */
     color: white;
-    margin: auto!important;
+    
 }
 .heading.jumbotron.text-center.aos-init.aos-animate {
     /* margin: auto!important; */
@@ -246,6 +266,10 @@ a.btn.btn-doggie.btn-lg.btn-default {
     /* margin-bottom: 176px; */
     background: transparent;
     color: black;
+    margin-top: 215px!important;
+}
+li.list-group-item.clearfix.registry {
+    margin-bottom: 8px;
 }
 
 }
