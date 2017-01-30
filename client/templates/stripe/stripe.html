@@ -22,6 +22,34 @@
           </li>
         </ul>
 
+        <form class="registry">
+          <div class="form-group">
+            <label for="firstName">First Name</label>
+            <input type="text" class="form-control" id="firstName" placeholder="First Name">
+          </div>
+          <div class="form-group">
+            <label for="lastName">Last Name</label>
+            <input type="text" class="form-control" id="lastName" placeholder="Last Name">
+          </div>
+          <div class="form-group">
+            <label for="firstName">Gift Amount</label>
+            <input type="number" class="form-control" id="amount" placeholder="Gift Amount">
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="text" class="form-control" id="email" placeholder="Email">
+          </div>
+
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea row="3" class="form-control" id="message" placeholder="Message"></textarea>
+          </div>
+           <div class="form-group">
+            <button class="btn btn-primary" type="submit">Submit</button>
+          </div>
+
+        </form>
+
   
       {{else}}
         <p class="alert alert-warning"><i class="fa fa-refresh fa-spin"></i> Processing payment...</p>
