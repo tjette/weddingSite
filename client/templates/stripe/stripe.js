@@ -2,6 +2,14 @@ Template.stripe.helpers({
   processing() {
     return Template.instance().processing.get();
   },
+   showForm:function(){
+  var show = Session.get('openForm');
+  if(show === true){
+     return true;
+  }else{
+     return false;
+   }
+  },
   paymentSucceeded() {
     return Template.instance().paymentSucceeded.get();
   }
@@ -10,6 +18,7 @@ Template.stripe.helpers({
 
 Template.stripe.events({
   'click [data-service]' ( event, template ) {
+    Session.set("openForm", true);
     const pricing = {
       'Date Night': {
         amount: 2500,
@@ -30,6 +39,7 @@ Template.stripe.events({
     template.selectedService.set( service );
     template.processing.set( true );
 
+
     template.checkout.open({
       name: 'Rachelle & Travis Wedding',
       description: service.description,
@@ -42,6 +52,7 @@ Template.stripe.events({
 Template.stripe.onCreated(function(){
  let template = Template.instance();
 
+  Session.set('openForm', false);
   template.selectedService  = new ReactiveVar( false );
   template.processing       = new ReactiveVar( false );
 

@@ -21,8 +21,8 @@
             <a href="#" data-service="Date Night" class="btn btn-success pull-right">Buy Now</a>
           </li>
         </ul>
-
-        <form class="registry">
+        {{#if showForm}}
+        <form name="giftForm" class="registry">
           <div class="form-group">
             <label for="firstName">First Name</label>
             <input type="text" class="form-control" id="firstName" placeholder="First Name">
@@ -49,6 +49,7 @@
           </div>
 
         </form>
+        {{/if}}
 
   
       {{else}}
