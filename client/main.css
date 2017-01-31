@@ -37,6 +37,15 @@ i#date {
     margin-left: -60px;
     margin-top: 23px;
 }
+a.list-group-item {
+    margin-top: 6px;
+}
+p.alert.alert-info {
+    margin-top: -20px;
+}
+ul.list-group.price-list {
+    margin-top: 7px!important;
+}
 
 
 div#__blaze-root {

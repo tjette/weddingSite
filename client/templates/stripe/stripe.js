@@ -17,8 +17,34 @@ Template.stripe.helpers({
 
 
 Template.stripe.events({
+  'click .registryGift': function(event, template){
+    return Session.set('openForm', true);
+  },
+  'submit .registry': function(event, template){
+    event.preventDefault();
+
+     var registryData = $(event.target).serializeArray();
+
+    console.log('registryData',registryData);
+
+    var registryObj = {};
+
+    _.each(registryData, function(e){
+        console.log(e);
+        registryObj[e.name] = e.value || false;
+
+    })
+    console.log(registryObj);
+
+    Meteor.call('giftCard', registryObj);
+  },
+  'click .exit': function(event,template){
+    return window.close();
+  },
   'click [data-service]' ( event, template ) {
-    Session.set("openForm", true);
+
+    
+
     const pricing = {
       'Date Night': {
         amount: 2500,

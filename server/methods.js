@@ -24,7 +24,17 @@ Meteor.methods({
       distance: distance
     });
   },
-  
+  giftCard: function(firstName, lastName, giftType, giftAmount, email, message){
+    return Gift.insert({
+      firstName: firstName,
+      lastName: lastName,
+      giftType: giftType,
+      giftAmount: giftAmount,
+      email: email,
+      message: message
+
+    });
+  },
   processPayment: function( charge ) {
     check( charge, {
       amount: Number,
