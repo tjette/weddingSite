@@ -12,6 +12,9 @@ Template.stripe.helpers({
   },
   paymentSucceeded() {
     return Template.instance().paymentSucceeded.get();
+  },
+  thisGift: function(){
+    return Gift.findOne(Session.get('gift'));
   }
 });
 
@@ -35,43 +38,50 @@ Template.stripe.events({
 
     })
     console.log(registryObj);
+     Meteor.call('giftCard', registryObj);
+    template.processing.set( true );
 
-    Meteor.call('giftCard', registryObj);
-  },
-  'click .exit': function(event,template){
-    return window.close();
-  },
-  'click [data-service]' ( event, template ) {
+    Session.set('gift', registryObj);
+   
+    template.checkout.open({
+      name: 'Rachelle & Travis Wedding',
+      description: registryObj.giftType,
+      amount: registryObj.giftAmount * 100
+    });
+
+  }
+  
+  // 'click [data-service]' ( event, template ) {
 
     
 
-    const pricing = {
-      'Date Night': {
-        amount: 2500,
-        description: "Gift towards a date"
-      },
-      'Home Improvement': {
-        amount: 2500,
-        description: "Home improvements that are necessaary"
-      },
-      'Honey Moon': {
-        amount: 5000,
-        description: "Help us take a trip to celebrate our marriage"
-      }
-    };
+  //   const pricing = {
+  //     'Date Night': {
+  //       amount: 2500,
+  //       description: "Gift towards a date"
+  //     },
+  //     'Home Improvement': {
+  //       amount: 2500,
+  //       description: "Home improvements that are necessaary"
+  //     },
+  //     'Honey Moon': {
+  //       amount: 5000,
+  //       description: "Help us take a trip to celebrate our marriage"
+  //     }
+  //   };
 
-    let service = pricing[ event.target.dataset.service ];
+  //   let service = pricing[ event.target.dataset.service ];
 
-    template.selectedService.set( service );
-    template.processing.set( true );
+//     template.selectedService.set( service );
+//     template.processing.set( true );
 
 
-    template.checkout.open({
-      name: 'Rachelle & Travis Wedding',
-      description: service.description,
-      amount: service.amount
-    });
-  }
+    // template.checkout.open({
+    //   name: 'Rachelle & Travis Wedding',
+    //   description: service.description,
+    //   amount: service.amount
+    // });
+//   }
 });
 
 
@@ -79,27 +89,30 @@ Template.stripe.onCreated(function(){
  let template = Template.instance();
 
   Session.set('openForm', false);
-  template.selectedService  = new ReactiveVar( false );
+  // template.selectedService  = new ReactiveVar( false );
+  Session.set('gift', false);
   template.processing       = new ReactiveVar( false );
+  
 
   template.checkout = StripeCheckout.configure({
     key: 'pk_test_P5VCIAn9TaffqxE4GCmedQps',
     image: './images/engagement1.jpg',
     locale: 'auto',
     token( token ) {
-      let service = template.selectedService.get(),
-          charge  = {
-            amount: token.amount || service.amount,
+      var registryObj = Session.get('gift');
+        charge  = {
+            amount: token.amount || registryObj.giftAmount,
             currency: token.currency || 'usd',
             source: token.id,
-            description: token.description || service.description,
+            description: token.description || registryObj.message,
             receipt_email: token.email
           };
 
       Meteor.call( 'processPayment', charge, ( error, response ) => {
         if ( error ) {
           template.processing.set( false );
-           swal("Error!", "Something went wrong processing the payment", "error");
+          console.log(error);
+           swal("Error!", "Something went wrong processing the payment",'error');
         } else {
           swal("Good job!", "Your payment submitted!", "success")
         }
