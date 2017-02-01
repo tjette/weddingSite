@@ -20,52 +20,13 @@
             <!-- <a href="#" data-service="Date Night" class="btn btn-success pull-right">Buy Now</a> -->
           </li>
         </ul>
-        {{#if showForm}}
-        <form name="giftForm" class="registry">
-        <h1>Gift Card For Rachelle and Travis</h1>
-          <div class="form-group">
-            <label for="firstName">First Name</label>
-            <input type="text" class="form-control" name="firstName" value="" id="firstName" placeholder="First Name">
-          </div>
-          <div class="form-group">
-            <label for="lastName">Last Name</label>
-            <input type="text" class="form-control" name="lastName" value="" id="lastName" placeholder="Last Name">
-          </div>
-          <div class="form-group">
-            <label for="firstName">Gift Type</label>
-            <select class="form-control ui dropdown attending" id="selector" tabindex="3" name="giftType">
 
-                <option value="Honey Moon" >
-                    Honeymoon
-                </option>
-                <option value="Home Improvement">
-                    Home Improvement
-                </option>
-                <option value="Date Night">
-                    Date Night
-                </option>
-            </select>
-          </div>
-          <div class="form-group">
-            <label for="firstName">Gift Amount</label>
-            <input type="number" class="form-control" name="giftAmount" value="" id="amount" placeholder="Gift Amount">
-          </div>
-          <div class="form-group">
-            <label for="email">Email</label>
-            <input type="email" class="form-control" name="email" value="" id="email" placeholder="Email">
-          </div>
 
-          <div class="form-group">
-            <label for="message">Message</label>
-            <textarea row="3" class="form-control" name="message" value="" id="message" placeholder="Message"></textarea>
-          </div>
-           <div class="form-group">
-            <button class="btn btn-primary" type="submit">Submit</button>
-            <button class="btn btn-danger exit">Close</button>
-          </div>
 
-        </form>
-        {{/if}}
+
+
+
+
 
   
       {{else}}
@@ -73,4 +34,5 @@
       {{/unless}}
     </div>
   </div>
+
 </template>
