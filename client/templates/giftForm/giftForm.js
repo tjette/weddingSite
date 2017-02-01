@@ -1,3 +1,17 @@
+Template.giftForm.helpers({
+    processing() {
+        return Template.instance().processing.get();
+    },
+    paymentSucceeded() {
+        return Template.instance().paymentSucceeded.get();
+    }
+});
+
+
+
+
+
+
 Template.giftForm.events({
     'submit .registry': function(event, template){
         event.preventDefault();
@@ -25,8 +39,9 @@ Template.giftForm.events({
             amount: registryObj.giftAmount * 100
         });
 
+        $('#myModalT').modal('hide');
     }
-})
+});
 
 Template.giftForm.onCreated(function(){
     let template = Template.instance();
@@ -47,7 +62,7 @@ Template.giftForm.onCreated(function(){
                 amount: parseFloat(token.amount * 100) || parseFloat(registryObj.giftAmount * 100),
                 currency: token.currency || 'usd',
                 source: token.id,
-                description: token.description || registryObj.message,
+                description: token.description || registryObj.giftType,
                 receipt_email: token.email
             };
 

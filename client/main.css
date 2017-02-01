@@ -137,6 +137,14 @@ a.btn.btn-doggie.btn-lg.btn-default {
        padding: 16px;
        color: white;
      }
+.modal-header {
+    padding: 15px;
+    text-align: center;
+    border-bottom: 1px solid #e5e5e5;
+    background-color: darkbrown;
+    background-color: #795548;
+    color: white;
+}
      .heading.jumbotron.text-center.aos-init.aos-animate {
     margin: auto!important;
 }
