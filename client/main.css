@@ -26,6 +26,12 @@
     color: white;
     font-size: 18px;
 }
+img.targetLogo {
+    max-width: 60px;
+}
+img.bedbath {
+    max-width: 70px;
+}
 i#honey {
     margin-left: -70px;
 }

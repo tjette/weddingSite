@@ -1,4 +1,4 @@
-Template.rsvp.helpers({
+dsTemplate.rsvp.helpers({
     'rsvp': function () {
         return Rsvp.find({'_id': Session.get('rsvp')}).fetch();
     },
