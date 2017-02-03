@@ -1,3 +1,5 @@
+
+
 Template.giftForm.helpers({
     processing() {
         return Template.instance().processing.get();
@@ -44,7 +46,9 @@ Template.giftForm.events({
 });
 
 Template.giftForm.onCreated(function(){
-    let template = Template.instance();
+Stripe.setPublishableKey('pk_test_B8wWCBkUB5105eXRIJyJqTa0');
+let template = Template.instance();
+
 
     Session.set('openForm', false);
     // template.selectedService  = new ReactiveVar( false );
@@ -53,7 +57,7 @@ Template.giftForm.onCreated(function(){
 
 
     template.checkout = StripeCheckout.configure({
-        key: 'pk_test_P5VCIAn9TaffqxE4GCmedQps',
+        key: "pk_test_B8wWCBkUB5105eXRIJyJqTa0",
         image: './images/engagement1.jpg',
         locale: 'auto',
         token( token ) {
@@ -68,7 +72,7 @@ Template.giftForm.onCreated(function(){
 
             Meteor.call( 'processPayment', charge, ( error, response ) => {
                 if ( error ) {
-                    template.processing.set( false );
+                    
                     console.log(error);
                     swal("Error!", "Something went wrong processing the payment",'error');
                 } else {
@@ -81,3 +85,6 @@ Template.giftForm.onCreated(function(){
         }
     });
 });
+
+
+

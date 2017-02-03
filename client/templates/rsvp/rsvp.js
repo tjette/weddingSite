@@ -47,9 +47,13 @@ Template.rsvp.events({
             confirmButtonText: "Yes, looks good!",
             confirmButtonColor: "#ec6c62"
         }, function (isConfirm) {
-            if (isConfirm === true) {
+            if (isConfirm === true && rsvpObj.attend == "yes") {
                 var rsvpId = Rsvp.insert(rsvpObj);
-                swal("Submitted!", "Your RSVP has been submitted.", "success");
+                swal({
+                    title: "Glad you can make it!",
+                    text: "Your RSVP has been submitted",
+                    imageUrl: "./images/thumbsUp.jpg"
+                });
                 emailObj = rsvpObj;
                 emailObj._id = rsvpId;
                 emailObj.subject = "Wedding RSVP Comfirmation: Travis Jette and Rachelle";
@@ -57,6 +61,15 @@ Template.rsvp.events({
                 Meteor.call('sendEmail', emailObj)
                 console.log(emailObj);
                 FlowRouter.go('/details')
+            } else if(isConfirm === true && rsvpObj.attend == "no") {
+                Rsvp.insert(rsvpObj);
+                
+                swal({
+                    title: "Sorry You Can't Make The Wedding",
+                    text: "Your RSVP has been submitted",
+                    imageUrl: "./images/frownyFace.jpg"
+                });
+                
             } else {
                 swal("Cancelled", "Your RSVP has been cancelled", "error");
             }
@@ -71,9 +84,13 @@ Template.rsvp.events({
     'change .attending':function(event, template){
         console.log(event.target.value);
 
-        var going= event.target.value || false;
+        var going= event.target.value;
+        if(going === true){
 
         Session.set('going', going)
+    } else {
+        return Session.set('going', false)
+    }
     }
 });
 

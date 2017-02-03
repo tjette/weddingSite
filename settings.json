@@ -6,9 +6,9 @@
     }
   },
   "public": {
-    "stripe": "pk_test_P5VCIAn9TaffqxE4GCmedQps"
+    "stripe": "pk_test_B8wWCBkUB5105eXRIJyJqTa0"
   },
   "private": {
-    "stripe": "sk_test_PLEp1LJbTXXO0940yTtrQEAL"
+    "stripe": "sk_test_U9ilhQdWlUXiQatPH4iDbzD1"
   }
 }
