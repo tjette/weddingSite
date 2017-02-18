@@ -36,6 +36,12 @@ FlowRouter.route('/stripe', {
   }
 });
 
+FlowRouter.route('/photos', {
+    action: function() {
+ BlazeLayout.render('mainLayout', {content: 'photos'});
+  }
+});
+
 FlowRouter.route('/editRsvp',{
   action: function(params,queryParams) {
     Session.set('params', queryParams)
