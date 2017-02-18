@@ -50,5 +50,16 @@ Meteor.methods({
         payment      = handleCharge( charge );
 
     return payment;
-  }
+  },
+
+  // instagram: function(){
+  //      HTTP.call( 'GET', 'https://api.instagram.com/v1/tags/nofilter/media/recent?access_token=ACCESS-TOKEN', {}, function( error, response ) {
+  //       if ( error ) {
+  //         console.log( error );
+  //         } else {
+  //         console.log( response );
+  //       }
+
+  //     });
+  // }
 });

@@ -91,7 +91,19 @@ ul.nav.navbar-nav.navbar-right {
   padding-right: 20px;
 }@font-face{font-family:"TT Rounds Condensed Bold";src:url(/TTRoundsCondensed-Bold.woff2)}
 
-
+.instaTags{
+  list-style:none  
+}
+.instaTags li{
+  float:left;
+  width:200px;
+  height:200px;
+  margin:10px
+}
+.instaTags li img{
+  max-width:100%;
+  max-height:100%;
+}
 
 h1,.lead,b,.btn,.progress {
   font-family: "TT Rounds Condensed Bold";
