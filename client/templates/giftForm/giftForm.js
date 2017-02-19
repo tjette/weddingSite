@@ -46,7 +46,7 @@ Template.giftForm.events({
 });
 
 Template.giftForm.onCreated(function(){
-Stripe.setPublishableKey('pk_test_B8wWCBkUB5105eXRIJyJqTa0');
+// Stripe.setPublishableKey('pk_test_B8wWCBkUB5105eXRIJyJqTa0');
 let template = Template.instance();
 
 
