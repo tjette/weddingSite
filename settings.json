@@ -10,12 +10,7 @@
   },
   "private": {
     "stripe": "sk_test_U9ilhQdWlUXiQatPH4iDbzD1"
-  },
+  }
 
-  "InstagramAPI": {
-        "CLIENT_ID": "01bf29127d1e47f2b97089dff9f9bc89",
-        "CLIENT_SECRET": "3e12a1bd54334dbd82215a61eb5779fc",
-        "ACCESS_TOKEN": "13591390.01bf291.28c2c17dbd214e2f8e6aeda1ef08da7b"
-    }
 
 }
