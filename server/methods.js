@@ -1,5 +1,4 @@
 Stripe = StripeAPI( 'sk_test_U9ilhQdWlUXiQatPH4iDbzD1' );
-
 Meteor.methods({
   sendEmail: function (emailObj) {
    //actual email sending method
@@ -61,5 +60,9 @@ Meteor.methods({
         }
 
       });
+  },
+  scrapeData: function(){
+      data = Scrape.url("https:www.instagram.com/tags/millertime");
+
   }
 });

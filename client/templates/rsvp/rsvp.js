@@ -48,7 +48,8 @@ Template.rsvp.events({
             confirmButtonColor: "#ec6c62"
         }, function (isConfirm) {
             if (isConfirm === true && rsvpObj.attend == "yes") {
-                var rsvpId = Rsvp.insert(rsvpObj);
+                Meteor.call("addRsvp", rsvpObj);
+                // var rsvpId = Rsvp.insert(rsvpObj);
                 swal({
                     title: "Glad you can make it!",
                     text: "Your RSVP has been submitted",
@@ -57,13 +58,13 @@ Template.rsvp.events({
                 emailObj = rsvpObj;
                 emailObj._id = rsvpId;
                 emailObj.subject = "Wedding RSVP Comfirmation: Travis Jette and Rachelle";
-                emailObj.message = emailObj.firstName + " - <br><br> Thank you for submitting the RSVP!  This is your official RSVP confirmation. <br><br> If at any time before the wedding you wish to edit or cancel your RSVP, click this link  <a href='http://localhost:3000/editRsvp?id="+ emailObj._id +"'>Change RSVP</a> <br><br> - Travis and Rachelle";
+                emailObj.message = emailObj.firstName + " - <br><br> Thank you for submitting the RSVP!  This is your official RSVP confirmation. <br><br> If at any time before the wedding you wish to edit or cancel your RSVP, click this link  <a href='https://www.rachelleandtravis.com/editRsvp?id="+ emailObj._id +"'>Change RSVP</a> <br><br> - Travis and Rachelle";
                 Meteor.call('sendEmail', emailObj)
                 console.log(emailObj);
                 FlowRouter.go('/details')
             } else if(isConfirm === true && rsvpObj.attend == "no") {
-                Rsvp.insert(rsvpObj);
-                
+                // Rsvp.insert(rsvpObj);
+                Meteor.call("addRsvp", rsvpObj);
                 swal({
                     title: "Sorry You Can't Make The Wedding",
                     text: "Your RSVP has been submitted",

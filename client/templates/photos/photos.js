@@ -17,6 +17,13 @@ Template.photos.onCreated(function () {
     });
 
 
+Meteor.call('scrapeData', function(err,resp){
+    if(err){
+        console.log(err, "error");
+    } else {
+        console.log(resp, "response");
+    }
+});
 
 // var photos = {};
 //  Meteor.call('instagram', photos, function(err,res){
