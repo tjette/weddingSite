@@ -48,8 +48,8 @@ Template.rsvp.events({
             confirmButtonColor: "#ec6c62"
         }, function (isConfirm) {
             if (isConfirm === true && rsvpObj.attend == "yes") {
-                Meteor.call("addRsvp", rsvpObj);
-                // var rsvpId = Rsvp.insert(rsvpObj);
+                // Meteor.call("addRsvp", rsvpObj);
+                var rsvpId = Rsvp.insert(rsvpObj);
                 swal({
                     title: "Glad you can make it!",
                     text: "Your RSVP has been submitted",
