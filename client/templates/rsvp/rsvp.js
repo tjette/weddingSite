@@ -63,8 +63,8 @@ Template.rsvp.events({
                 console.log(emailObj);
                 FlowRouter.go('/details')
             } else if(isConfirm === true && rsvpObj.attend == "no") {
-                // Rsvp.insert(rsvpObj);
-                Meteor.call("addRsvp", rsvpObj);
+                Rsvp.insert(rsvpObj);
+                // Meteor.call("addRsvp", rsvpObj);
                 swal({
                     title: "Sorry You Can't Make The Wedding",
                     text: "Your RSVP has been submitted",
