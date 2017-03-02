@@ -30,8 +30,10 @@ event.preventDefault();
         confirmButtonColor: "#ec6c62"
     }, function (isConfirm) {
         if (isConfirm === true) {
+            var contactId = Contacts.insert(contactObj);
             swal("Submitted!", "Your Contact Request has been submitted.", "success");
             emailObj=contactObj;
+            emailObj._id = contactId;
             
             emailObj.subject = "Contact Request Form: Travis Jette and Rachelle";
             emailObj.message = emailObj.firstName + " - <br><br> Thank you for submitting the Contact Request!  We will respond as quick as possible. Thank You <br><br> - Travis and Rachelle<br><br>" + emailObj.messageArea + "<br>" + emailObj.phone;
