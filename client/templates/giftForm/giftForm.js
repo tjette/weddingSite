@@ -26,10 +26,16 @@ Template.giftForm.events({
 
         _.each(registryData, function(e){
             console.log(e);
-            registryObj[e.name] = e.value || false;
+            if(e.value) {
+                registryObj[e.name] = e.value || false;
+            } else {
+                alert("You must enter " + e.name);
+
+            }
 
         })
         console.log(registryObj);
+
         Meteor.call('giftCard', registryObj);
         template.processing.set( true );
 
