@@ -1,0 +1,12 @@
+<template name="contactRequests">
+<div class="well">
+    <h3>Contact Requests</h3>
+{{#each contact}}
+    <p>id: {{_id}}</p>
+    <p>Name: {{firstName}} {{lastName}}</p>
+    <p>Email: {{email}}</p>
+    <p>Message: {{messageArea}}</p>
+
+{{/each}}
+</div>
+</template>

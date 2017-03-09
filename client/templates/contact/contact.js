@@ -29,12 +29,13 @@ event.preventDefault();
         confirmButtonText: "Yes, looks good!",
         confirmButtonColor: "#ec6c62"
     }, function (isConfirm) {
-        if (isConfirm === true) {
+        if (isConfirm) {
             var contactId = Contacts.insert(contactObj);
             swal("Submitted!", "Your Contact Request has been submitted.", "success");
             emailObj=contactObj;
             emailObj._id = contactId;
-            
+            console.log("contact", contactId);
+            console.log("contactObj", contactObj);
             emailObj.subject = "Contact Request Form: Travis Jette and Rachelle";
             emailObj.message = emailObj.firstName + " - <br><br> Thank you for submitting the Contact Request!  We will respond as quick as possible. Thank You <br><br> - Travis and Rachelle<br><br>" + emailObj.messageArea + "<br>" + emailObj.phone;
             Meteor.call('sendEmail', emailObj)

@@ -48,3 +48,9 @@ FlowRouter.route('/editRsvp',{
       BlazeLayout.render('mainLayout', {content: 'editRsvp'});
   }
 });
+
+FlowRouter.route('/admin', {
+    action: function() {
+        BlazeLayout.render('mainLayout', {content: 'admin'});
+    }
+});

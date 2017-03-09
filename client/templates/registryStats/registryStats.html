@@ -1,0 +1,12 @@
+<template name="registryStats">
+    <div class="well">
+        <h3>Gifts</h3>
+        {{#each gift}}
+            <p>id: {{_id}}</p>
+            <p>Name: {{registryObj.firstName}} {{registryObj.lastName}}</p>
+            <p>Email: {{registryObj.email}}</p>
+            <p>Message: {{registryObj.message}}</p>
+
+        {{/each}}
+    </div>
+</template>

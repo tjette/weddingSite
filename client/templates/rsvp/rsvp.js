@@ -50,6 +50,7 @@ Template.rsvp.events({
             if (isConfirm === true && rsvpObj.attend == "yes") {
                 // Meteor.call("addRsvp", rsvpObj);
                 var rsvpId = Rsvp.insert(rsvpObj);
+                console.log(rsvpId);
                 swal({
                     title: "Glad you can make it!",
                     text: "Your RSVP has been submitted",

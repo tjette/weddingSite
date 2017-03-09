@@ -23,14 +23,9 @@ Meteor.methods({
       distance: distance
     });
   },
-  giftCard: function(firstName, lastName, giftType, giftAmount, email, message){
+  giftCard: function(registryObj){
     return Gift.insert({
-      firstName: firstName,
-      lastName: lastName,
-      giftType: giftType,
-      giftAmount: giftAmount,
-      email: email,
-      message: message
+      registryObj:registryObj
 
     });
   },
@@ -64,5 +59,14 @@ Meteor.methods({
   scrapeData: function(){
       data = Scrape.url("https:www.instagram.com/tags/millertime");
 
+  },
+  removeGifts:function(){
+    return Gift.remove({});
+  },
+  removeRsvps:function(){
+    return Rsvp.remove({});
+  },
+  removeContacts:function(){
+    return Contacts.remove({});
   }
 });
