@@ -2,11 +2,14 @@
     <div class="well">
         <h3>Gifts</h3>
         {{#each gift}}
+        <div class="well">
             <p>id: {{_id}}</p>
             <p>Name: {{registryObj.firstName}} {{registryObj.lastName}}</p>
             <p>Email: {{registryObj.email}}</p>
+            <p>Gift Type: {{registryObj.giftType}}</p>
+            <p>Gift Amount: {{registryObj.giftAmount}}</p>
             <p>Message: {{registryObj.message}}</p>
-
+        </div>
         {{/each}}
     </div>
 </template>

@@ -56,10 +56,7 @@ Meteor.methods({
 
       });
   },
-  scrapeData: function(){
-      data = Scrape.url("https:www.instagram.com/tags/millertime");
-
-  },
+  
   removeGifts:function(){
     return Gift.remove({});
   },
