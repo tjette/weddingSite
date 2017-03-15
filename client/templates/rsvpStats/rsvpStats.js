@@ -6,11 +6,15 @@ Template.rsvpStats.helpers({
     totalYes: function () {
         return Rsvp.find({"attend": "yes"}).count();
     },
+
     totalNo: function () {
         return Rsvp.find({'attend': false}).count();
     },
     'allRsvp': function () {
         return Rsvp.find().fetch();
+    },
+    'totalAttendees':function(){
+        return Attendees.findOne({_id: 'master'}).attendees;
     }
 });
 

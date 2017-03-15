@@ -65,5 +65,8 @@ Meteor.methods({
   },
   removeContacts:function(){
     return Contacts.remove({});
+  },
+  addGuests: function(totalGuests){
+    return Attendees.update({'_id': 'master'},{$inc:{attendees: totalGuests}});
   }
 });
