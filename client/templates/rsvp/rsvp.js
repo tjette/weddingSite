@@ -5,6 +5,7 @@ Template.rsvp.helpers({
     'going': function(){
         return Session.get('going');
     }
+
 });
 
 
@@ -88,11 +89,12 @@ Template.rsvp.events({
         console.log(event.target.value);
 
         var going= event.target.value;
-        if(going === true){
+        if(going === 'yes'){
 
         Session.set('going', going)
     } else {
         return Session.set('going', false)
+        
     }
     }
 });
