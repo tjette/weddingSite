@@ -2,7 +2,7 @@ Contacts = new Mongo.Collection('contact');
 
 Rsvp = new Mongo.Collection('rsvps');
 
-Attendees = new Mongo.Collection('attendees');
+Party = new Mongo.Collection('party');
 
 Route = new Mongo.Collection('route');
 

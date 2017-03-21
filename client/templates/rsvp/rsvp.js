@@ -31,6 +31,8 @@ Template.rsvp.events({
             }
 
         })
+                rsvpObj.party = parseFloat(rsvpObj.party) || parseInt('0');
+                // item.balance = parseFloat(item.balance) || parseInt('0');
 
         if(Session.get('hasErrors')){
             return false

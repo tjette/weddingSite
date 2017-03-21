@@ -13,9 +13,10 @@ Template.rsvpStats.helpers({
     'allRsvp': function () {
         return Rsvp.find().fetch();
     },
-    'totalAttendees':function(){
-        return Attendees.findOne({_id: 'master'}).attendees;
+     totalInParty: function(){
+        return Session.get("totalParty");
     }
+
 });
 
 Template.rsvpStats.events({
@@ -24,6 +25,13 @@ Template.rsvpStats.events({
 
 Template.rsvpStats.onCreated(function () {
     //add your statement here
+     Meteor.call('totalInParty',function(err,resp){
+  console.log(resp);
+    _.each(resp,function(e){
+      console.log(e)
+      Party.insert(e); // insert to local collection
+    })
+  })
 });
 
 Template.rsvpStats.onRendered(function () {

@@ -66,7 +66,28 @@ Meteor.methods({
   removeContacts:function(){
     return Contacts.remove({});
   },
-  addGuests: function(totalGuests){
-    return Attendees.update({'_id': 'master'},{$inc:{attendees: totalGuests}});
-  }
+   'totalParty': function(){
+  var pipeline = [
+    {$group: {_id: "master",
+     numberOfGuests: {$sum: "$party"}}}
+    
+  ];
+  var result = Rsvp.aggregate(pipeline);
+  console.log(result);
+  return result;
+   
+ },
+ removeParty: function(){
+  return Party.remove({});
+ }
+
+
 });
+
+
+
+
+
+
+
+
