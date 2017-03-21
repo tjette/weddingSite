@@ -30,11 +30,6 @@ FlowRouter.route('/rsvp', {
   }
 });
 
-FlowRouter.route('/stripe', {
-    action: function() {
- BlazeLayout.render('mainLayout', {content: 'stripe'});
-  }
-});
 
 FlowRouter.route('/photos', {
     action: function() {

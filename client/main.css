@@ -27,22 +27,24 @@
     font-size: 18px;
 }
 img.targetLogo {
-    max-width: 60px;
+    max-width: 100px;
+    /*margin-left: 70px;*/
 }
 img.bedbath {
-    max-width: 70px;
+    max-width: 100px;
+    /*margin-left: 96px;*/
 }
-i#honey {
-    margin-left: -70px;
+.honeyMoon {
+    /*margin-left: 130px;*/
 }
-i#home {
-    margin-left: -111px;
-    margin-top: 15px;
+.homeImprovement {
+    /*margin-left: 70px;*/
 }
-i#date {
-    margin-left: -60px;
-    margin-top: 23px;
+.dateNight {
+    /*margin-left: 24px;*/
 }
+
+
 a.list-group-item {
     margin-top: 6px;
 }
@@ -224,6 +226,11 @@ img.outsideLookAtBarn {
 }
 img.insideBarn {
     margin-left: 75px;
+}
+.circle {
+    border-radius: 50%;
+    background-color: white;
+    font-size: 6em;
 }
 /*@media screen and (min-width: 768px){
 

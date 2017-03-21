@@ -1,14 +1,43 @@
 <template name="registry">
-<div class="pageContent registry" data-aos="flip-left">
-    <h1 class="registryHeader">Registry Options
-        <span class="glyphicon glyphicon-gift"></span>
-    </h1>
+    <div class="pageContent registry" data-aos="flip-left">
+        <div class="row">
+        <h1 class="registryHeader">Registry Options
+            <span class="glyphicon glyphicon-gift"></span>
+        </h1>
+        <div class="col-md-2 col-xs-12 col-sm-1">
+            <a href="https://www.target.com" class=""><img class="targetLogo img-circle" src="./images/targetLogo2.jpg"></a>
 
-    <div><a href="https://www.target.com" class="list-group-item options"><img class="targetLogo" src="./images/targetLogo2.jpg"></a></div>
-    <div><a href="https://www.bedbathandbeyond.com/" class="list-group-item options"><img class="bedbath" src="./images/bedbath.png"></a></div>
-    
-{{>stripe}}
+        </div>
+        <div class="col-md-2 col-xs-12">
+            <a href="https://www.bedbathandbeyond.com/" class=""><img class="bedbath img-circle" src="./images/bedbath.png"></a>
+
+        </div>
+
+            <div class="col-md-2 col-xs-12 col-sm-1">
+
+                <div class="honeyMoon"><i class="fa fa-heart fa-3x registryGift circle" name="Honey Moon" id="honey" aria-hidden="true"></i></div>
+
+                <!-- <a href="#" data-service="Honey Moon" class="btn btn-success pull-right">Buy Now</a> -->
+            </div>
+
+            <div class="col-md-2 col-xs-12 col-sm-1">
+
+                <div class="homeImprovement"><i class="fa fa-home fa-3x registryGift circle" name="Home Improvement" id="home" aria-hidden="true"></i></div>
+
+                <!-- <a href="#" data-service="Home Improvement" class="btn btn-success pull-right">Buy Now</a> -->
+
+            </div>
+            <div class="col-md-2 col-xs-12 col-sm-1">
+
+                <div class="dateNight"><i class="fa fa-male fa-3x registryGift circle" name="Date Night" id="date" aria-hidden="true"></i> <i class="fa fa-female fa-3x registryGift circle" name="Date Night" aria-hidden="true"></i></div>
+
+                <!-- <a href="#" data-service="Date Night" class="btn btn-success pull-right">Buy Now</a> -->
+
+            </div>
+
+        </div>
 
 
-</div>
+
+    </div>
 </template>
