@@ -5,4 +5,8 @@ return Rsvp.find();
 
 Meteor.publish('gifts', function(){
 	return Gift.find();
+});
+
+Meteor.publish('registryOptions', function(){
+	return RegistryOptions.find();
 })

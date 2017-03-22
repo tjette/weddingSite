@@ -28,22 +28,24 @@
 }
 img.targetLogo {
     max-width: 100px;
-    /*margin-left: 70px;*/
+    margin-left: 70px;
 }
 img.bedbath {
     max-width: 100px;
-    /*margin-left: 96px;*/
+    margin-left: 96px;
 }
-.honeyMoon {
-    /*margin-left: 130px;*/
+ #honey {
+    margin-left: 130px;
 }
-.homeImprovement {
-    /*margin-left: 70px;*/
+#home {
+    margin-left: 132px;
 }
-.dateNight {
-    /*margin-left: 24px;*/
+#date{
+    margin-left: 130px;
 }
-
+#date2{
+    margin-left: 4px;
+}
 
 a.list-group-item {
     margin-top: 6px;
@@ -232,8 +234,8 @@ img.insideBarn {
     background-color: white;
     font-size: 6em;
 }
-.registryInfo{
-  display:none;
+p.btn.btn-primary.btn-small.registryGift {
+    font-size: 15px;
 }
 /*@media screen and (min-width: 768px){
 
