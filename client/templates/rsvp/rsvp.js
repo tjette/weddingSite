@@ -22,13 +22,11 @@ Template.rsvp.events({
         _.each(formData, function(e){
             console.log(e);
             if(e.value) {
-
-
                 rsvpObj[e.name] = e.value || false;
-            }else {
+            }   else {
                 alert("You are missing " + e.name);
                 Session.set('hasErrors',true);
-            }
+                }
 
         })
                 rsvpObj.party = parseFloat(rsvpObj.party) || parseInt('0');
