@@ -27,25 +27,23 @@
     font-size: 18px;
 }
 img.targetLogo {
-    max-width: 100px;
-    margin-left: 70px;
+    max-width: 70px;
+    
 }
 img.bedbath {
-    max-width: 100px;
-    margin-left: 96px;
+    max-width: 80px;
+    
+}
+img#date {
+    max-width: 84px;
 }
  #honey {
-    margin-left: 130px;
+    
 }
 #home {
-    margin-left: 132px;
+    /*margin-left: 132px;*/
 }
-#date{
-    margin-left: 130px;
-}
-#date2{
-    margin-left: 4px;
-}
+
 
 a.list-group-item {
     margin-top: 6px;
@@ -211,6 +209,24 @@ a.btn.btn-doggie.btn-lg.btn-default {
 li.list-group-item.clearfix.registry {
     margin-bottom: 8px;
 }
+img.targetLogo {
+    max-width: 72px;
+    margin-left: -25px;
+}
+img.bedbath {
+    max-width: 74px;
+    margin-left: -25px;
+}
+i#honey {
+    margin-left: 10px;
+}
+i#home {
+    margin-left: 35px;
+}
+img#date {
+    max-width: 84px;
+    margin-left: 54px;
+}
 
 a {
     color: brown;
@@ -231,7 +247,6 @@ img.insideBarn {
 }
 .circle {
     border-radius: 50%;
-    background-color: white;
     font-size: 6em;
 }
 p.btn.btn-primary.btn-small.registryGift {
@@ -252,7 +267,7 @@ p.btn.btn-primary.btn-small.registryGift {
     color: black;
 }
 }*/
-@media(min-width:768px){
+@media(min-width:767px){
     div#__blaze-root {
         background: url(images/reflection.jpg)!important;
         min-height: 100vh;
@@ -314,6 +329,25 @@ a.btn.btn-doggie.btn-lg.btn-default {
 li.list-group-item.clearfix.registry {
     margin-bottom: 8px;
 }
+img.targetLogo {
+    max-width: 80px;
+    margin-left: -30px;
+}
+img.bedbath {
+    max-width: 76px;
+    margin-left: -18px;
+  
+}
+i#honey {
+    margin-left: 38px;
+}
+i#home {
+    margin-left: 94px;
+}
+img#date {
+    max-width: 84px;
+    margin-left: 136px;
+}
 }
 
 @media screen and (min-width: 1000px){
@@ -338,6 +372,64 @@ li.list-group-item.clearfix.registry {
     margin-bottom: 8px;
 }
 
+}
+@media(min-width:425px){
+  img#date {
+    max-width: 55px;
+    margin-left: 50px;
+}
+i#home {
+    margin-left: 34px;
+}
+
+}
+
+@media(min-width:468px){
+  img.targetLogo {
+    max-width: 72px;
+    margin-left: -46px;
+}
+}
+@media(min-width: 375px){
+  img.targetLogo {
+    max-width: 49px;
+    margin-left: -39px;
+}
+.circle {
+    border-radius: 50%;
+    font-size: 4em;
+}
+img.bedbath {
+    max-width: 49px;
+    margin-left: -25px;
+}
+i#home {
+    margin-left: 28px;
+}
+img#date {
+    max-width: 55px;
+    margin-left: 40px;
+}
+}
+@media(min-width: 768px){
+  i#home {
+    margin-left: 113px;
+}
+i#honey {
+    margin-left: 58px;
+}
+img.bedbath {
+    max-width: 54px;
+    margin-left: -12px;
+}
+img.targetLogo {
+    max-width: 54px;
+    margin-left: -39px;
+}
+img#date {
+    max-width: 59px;
+    margin-left: 147px;
+}
 }
 
 
