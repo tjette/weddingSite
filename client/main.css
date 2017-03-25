@@ -236,7 +236,7 @@ button.dropdown-toggle {
     margin-top: 15px;
     margin-bottom: 1px;
 }
-img.theBarn {
+/*img.theBarn {
     
 }
 img.outsideLookAtBarn {
@@ -244,7 +244,7 @@ img.outsideLookAtBarn {
 }
 img.insideBarn {
     margin-left: 75px;
-}
+}*/
 .circle {
     border-radius: 50%;
     font-size: 6em;
@@ -355,6 +355,9 @@ img.activeImg {
     margin-left: -69px;
     max-width: 235px!important;
 }
+img.theBarn {
+    margin-left: 63px;
+}
 }
 
 
@@ -397,6 +400,9 @@ i#home {
 img#date {
     max-width: 100px!important;
     margin-left: 184px!important;
+}
+img.theBarn {
+    margin-left: 43px;
 }
 
 }
