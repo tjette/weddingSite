@@ -358,6 +358,12 @@ img.activeImg {
 img.theBarn {
     margin-left: 63px;
 }
+ul.nav.navbar-nav.navbar-right {
+    padding: 0px;
+    display: block;
+    font-size: 10px;
+    float: none!important;
+}
 }
 
 
@@ -404,6 +410,12 @@ img#date {
 img.theBarn {
     margin-left: 43px;
 }
+ul.nav.navbar-nav.navbar-right {
+    padding: 0px;
+    display: block;
+    font-size: 16px;
+    float: none!important;
+}
 
 }
 @media(min-width:320px){
@@ -427,6 +439,7 @@ img#date {
     max-width: 48px;
     margin-left: 39px;
 }
+
 }
 @media(min-width:425px){
   img#date {
