@@ -252,6 +252,10 @@ img.insideBarn {
 p.btn.btn-primary.btn-small.registryGift {
     font-size: 15px;
 }
+
+img.activeImg {
+    max-width: 100px;
+}
 /*@media screen and (min-width: 768px){
 
 .jumbotron h1, .jumbotron .h1 {
@@ -329,25 +333,27 @@ a.btn.btn-doggie.btn-lg.btn-default {
 li.list-group-item.clearfix.registry {
     margin-bottom: 8px;
 }
-img.targetLogo {
-    max-width: 80px;
-    margin-left: -30px;
-}
-img.bedbath {
-    max-width: 76px;
-    margin-left: -18px;
-  
+  i#home {
+    margin-left: 113px;
 }
 i#honey {
-    margin-left: 38px;
+    margin-left: 58px;
 }
-i#home {
-    margin-left: 94px;
+img.bedbath {
+    max-width: 54px;
+    margin-left: -12px;
+}
+img.targetLogo {
+    max-width: 54px;
+    margin-left: -39px;
 }
 img#date {
-   
-    max-width: 61px;
-    margin-left: 136px;
+    max-width: 59px;
+    margin-left: 147px;
+}
+img.activeImg {
+    margin-left: -69px;
+    max-width: 235px!important;
 }
 }
 
@@ -452,26 +458,7 @@ img#date {
     margin-left: 40px;
 }
 }
-@media(min-width: 767px){
-  i#home {
-    margin-left: 113px;
-}
-i#honey {
-    margin-left: 58px;
-}
-img.bedbath {
-    max-width: 54px;
-    margin-left: -12px;
-}
-img.targetLogo {
-    max-width: 54px;
-    margin-left: -39px;
-}
-img#date {
-    max-width: 59px;
-    margin-left: 147px;
-}
-}
+
 /*@media(max-width:1000px){
   i#honey {
     margin-left: 58px;
