@@ -381,14 +381,14 @@ img.bedbath.img-circle.gift {
 }
 i#honey {
     margin-left: 58px;
-    font-size: 100px;
+    font-size: 100px!important;
 }
 i#home {
     margin-left: 113px;
-    font-size: 100px;
+    font-size: 100px!important;
 }
 img#date {
-    max-width: 100px;
+    max-width: 100px!important;
 }
 
 }
