@@ -29,10 +29,10 @@ Template.registry.events({
 });
 
 
-//var registryObj = {};
-//registryObj._id = 'target';
-//registryObj.image = '/images/targetLogo2.jpg'
-//registryObj.title = 'Target Registry'
-//registryObj.description = 'View and purchase gifts from our registry.'
-//registryObj.link='http://target.com'
-//RegistryOptions.insert(registryObj)
+// var registryObj = {};
+// registryObj._id = 'target';
+// registryObj.image = '/images/targetLogo2.jpg'
+// registryObj.title = 'Target Registry'
+// registryObj.description = 'View and purchase gifts from our registry.'
+// registryObj.link='http://target.com'
+// RegistryOptions.insert(registryObj)

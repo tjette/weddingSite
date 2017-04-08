@@ -1,8 +1,6 @@
 Template.admin.helpers({
     //add you helpers here
-    totalInParty: function(){
-    	return Session.get("totalParty");
-    }
+   
 });
 
 Template.admin.events({
@@ -17,10 +15,7 @@ Template.admin.onCreated(function () {
     Meteor.subscribe( 'gifts');
     console.log("gift data");
 
-     Meteor.call('totalParty', function(err, resp){
-      Session.set('totalParty', resp[0].numberOfGuests || 0)
-      console.log(resp, "resp");
-    });
+     
 });
 
 Template.admin.onRendered(function () {
