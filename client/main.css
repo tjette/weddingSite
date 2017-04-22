@@ -1,3 +1,27 @@
+.flex-container{
+  display: flex;
+  justify-content: center;
+  flex-wrap:wrap;
+  align-items: center;
+  align-content: center;
+
+}
+
+.flex-item{
+  height: 50px;
+  /*background-color: orange;*/
+  text-align: center;
+  width:20%;
+  align-items: center;
+  align-content: center;
+  }
+
+.anotherFlexItem{
+  text-align: center;
+  align-content: center;
+  align-items: center;
+  width: 50px;
+}
 .fancy {
   font-family: 'Tangerine', cursive;
 }
@@ -11,6 +35,19 @@
 
 .plumy{
   color: #DDA0DD;
+}
+button.dropdown-toggle {
+    background-color: white;
+    border: 3px;
+}
+a.detailsPage {
+    color: black;
+}
+a.detailsPage.website {
+    margin-left: 0px;
+}
+p.title {
+    font-size: 14px;
 }
 
 .map-container {
@@ -26,7 +63,7 @@
     color: white;
     font-size: 18px;
 }
-img.targetLogo {
+/*img.targetLogo {
     max-width: 70px;
     
 }
@@ -36,7 +73,7 @@ img.bedbath {
 }
 img#date {
     max-width: 84px;
-}
+}*/
  #honey {
     
 }
@@ -209,7 +246,7 @@ a.btn.btn-doggie.btn-lg.btn-default {
 li.list-group-item.clearfix.registry {
     margin-bottom: 8px;
 }
-img.targetLogo {
+/*img.targetLogo {
     max-width: 72px;
     margin-left: -25px;
 }
@@ -226,7 +263,7 @@ i#home {
 img#date {
     max-width: 84px;
     margin-left: 54px;
-}
+}*/
 
 a {
     color: brown;
@@ -247,7 +284,7 @@ img.insideBarn {
 }*/
 .circle {
     border-radius: 50%;
-    font-size: 6em;
+    font-size: 4em;
 }
 p.btn.btn-primary.btn-small.registryGift {
     font-size: 15px;
@@ -333,7 +370,7 @@ a.btn.btn-doggie.btn-lg.btn-default {
 li.list-group-item.clearfix.registry {
     margin-bottom: 8px;
 }
-  i#home {
+  /*i#home {
     margin-left: 113px;
 }
 i#honey {
@@ -350,7 +387,7 @@ img.targetLogo {
 img#date {
     max-width: 59px;
     margin-left: 147px;
-}
+}*/
 img.activeImg {
     margin-left: -69px;
     max-width: 235px!important;
@@ -388,14 +425,14 @@ ul.nav.navbar-nav.navbar-right {
 li.list-group-item.clearfix.registry {
     margin-bottom: 8px;
 }
-img.targetLogo.img-circle.gift {
+/*img.targetLogo.img-circle.gift {
     max-width: 100px;
 }
 img.bedbath.img-circle.gift {
     max-width: 100px;
     margin-left: 30px;
-}
-i#honey {
+}*/
+/*i#honey {
     margin-left: 100px!important;
     font-size: 100px!important;
 }
@@ -406,7 +443,7 @@ i#home {
 img#date {
     max-width: 100px!important;
     margin-left: 184px!important;
-}
+}*/
 img.theBarn {
     margin-left: 43px;
 }
@@ -419,7 +456,7 @@ ul.nav.navbar-nav.navbar-right {
 
 }
 @media(min-width:320px){
-  img.targetLogo {
+  /*img.targetLogo {
     max-width: 47px;
     margin-left: -52px;
 }
@@ -438,28 +475,28 @@ i#home {
 img#date {
     max-width: 48px;
     margin-left: 39px;
-}
+}*/
 
 }
 @media(min-width:425px){
-  img#date {
+ /* img#date {
     max-width: 55px;
     margin-left: 50px;
 }
 i#home {
     margin-left: 34px;
-}
+}*/
 
 }
 
 @media(min-width:468px){
-  img.targetLogo {
+ /* img.targetLogo {
     max-width: 72px;
     margin-left: -46px;
-}
+}*/
 }
 @media(min-width: 375px){
-  img.targetLogo {
+  /*img.targetLogo {
     max-width: 49px;
     margin-left: -39px;
 }
@@ -477,7 +514,7 @@ i#home {
 img#date {
     max-width: 55px;
     margin-left: 40px;
-}
+}*/
 }
 
 /*@media(max-width:1000px){
