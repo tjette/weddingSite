@@ -1,3 +1,54 @@
+.homeContainer{
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  margin-top: 250px
+  width: 50%;
+  background: transparent;
+  color: black;
+}
+
+.heading.jumbotron.text-center.homeContainer {
+    align-items: center;
+}
+
+.homeContainerItem{
+  align-content: center;
+  align-items: center;
+  width: 50%;
+}
+a.btn.btn-doggie.btn-lg.btn-default.homeContainerItem {
+    border-radius: 0px;
+    border: none;
+    /* width: 300px; */
+    text-transform: uppercase;
+    background: rgba(0, 188, 212, 0.75);
+    color: white;
+    letter-spacing: 8px;
+    /*margin-left: -13px!important;*/
+     font-size: 11px; 
+    /* margin-top: 22px; */
+}
+.weddingPics {
+    display: flex;
+    align-content: center;
+    align-items: center;
+    width: 58%;
+    margin-left: 143px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border-radius: 50%;
+}
+.weddingPicsItem {
+    align-items: center;
+    /* width: 74px; */
+    margin: 36px;
+    border-radius: 50%;
+    margin-top: -23px;
+    margin-bottom: -22px;
+}
+
+
 .flex-container{
   display: flex;
   justify-content: center;
@@ -63,23 +114,7 @@ p.title {
     color: white;
     font-size: 18px;
 }
-/*img.targetLogo {
-    max-width: 70px;
-    
-}
-img.bedbath {
-    max-width: 80px;
-    
-}
-img#date {
-    max-width: 84px;
-}*/
- #honey {
-    
-}
-#home {
-    /*margin-left: 132px;*/
-}
+
 
 
 a.list-group-item {
@@ -112,11 +147,7 @@ div#__blaze-root {
   background-repeat: no-repeat!important;
   background-attachment: fixed!important;
 }
-.heading.jumbotron.text-center {
-  background: rgba(0, 0, 0, 0.73);
-  color: white;
-  border-radius: 0px;
-}
+
 nav.navbar.navbar-default.navbar-static-top.Tangerine a {
   color: white;
   /*text-transform: uppercase;*/
@@ -173,18 +204,7 @@ div#__blaze-root {
   /*background-position: 0px -290px!important;*/
 }
 
-a.btn.btn-doggie.btn-lg.btn-default {
-    border-radius: 0px;
-    border: none;
-    /* width: 300px; */
-    text-transform: uppercase;
-    background: rgba(0, 188, 212, 0.75);
-    color: white;
-    letter-spacing: 8px;
-    margin-left: -13px!important;
-    /* font-size: 24px; */
-    /* margin-top: 22px; */
-}.teal.number {
+.teal.number {
    color: #00BCD4;
    font-size: 35px;
  }.countDown {
@@ -212,20 +232,38 @@ a.btn.btn-doggie.btn-lg.btn-default {
     background-color: #795548;
     color: white;
 }
-     .heading.jumbotron.text-center.aos-init.aos-animate {
+/*     .heading.jumbotron.text-center.homeContainer{
     margin: auto!important;
 
-}
+}*/
 /* Medium screens */
 @media all and (max-width: 800px) {
   .flex-container {
     /* When on medium sized screens, we center it by evenly distributing empty space around items */
     justify-content: space-around;
   }
+  .homeContainer{
+    justify-content: center;
+  }
+  .weddingPics{
+  display: flex;
+  align-content: center;
+  align-items: center;
+  width: 50%;
+  margin-left: 37px;
+
+}
+.weddingPicsItem{
+  align-items: center;
+  border-radius:50%;
+}
 }
 
 /* Small screens */
-@media all and (max-width: 500px) {
+@media(max-width: 425px) {
+  .homeContainer{
+    justify-content: center;
+  }
   .flex-container {
     /* On small screens, we are no longer using row direction but column */
     justify-content: center;
@@ -241,7 +279,60 @@ a.btn.btn-doggie.btn-lg.btn-default {
   .anotherFlexItem{
     width:43px;
   }
+  .weddingPics{
+  display: flex;
+  align-content: center;
+  align-items: center;
+  margin:13px;
 }
+.weddingPicsItem {
+    align-items: center;
+    width: 105px;
+    /* width: 74px; */
+    margin: 0px;
+    border-radius: 50%;
+     margin-top: -12px!important; 
+     margin-bottom: -6px!important; 
+}
+}
+@media(max-width: 1024px){
+  .weddingPicsItem {
+    align-items: center;
+    /* width: 74px; */
+    margin: 0px;
+    border-radius: 50%;
+    margin-top: -23px;
+    margin-bottom: -22px;
+}
+}
+
+@media(max-width: 768px){
+  .weddingPicsItem {
+    align-items: center;
+    /* width: 74px; */
+    margin: 0px;
+    border-radius: 50%;
+    margin-top: -23px;
+    margin-bottom: -22px;
+}
+}
+@media(max-width: 375px){
+.weddingPicsItem {
+    align-items: center;
+    margin: 4px;
+    width: 84px;
+    border-radius: 50%;
+}
+}
+@media(max-width:320px){
+  .weddingPicsItem {
+    align-items: center;
+    margin: 4px;
+    width: 65px;
+    border-radius: 50%;
+}
+}
+
 @media(min-width:600px){
     div#__blaze-root {
         background: url(images/reflection.jpg)!important;
@@ -263,34 +354,12 @@ a.btn.btn-doggie.btn-lg.btn-default {
            font-weight: bold;
        }
 }
-.heading.jumbotron.text-center.aos-init.aos-animate {
-    margin: 280px;
-    width: 51%;
-    margin-top: 180px;
-    background: transparent;
-    color: black;
+
 }
 li.list-group-item.clearfix.registry {
     margin-bottom: 8px;
 }
-/*img.targetLogo {
-    max-width: 72px;
-    margin-left: -25px;
-}
-img.bedbath {
-    max-width: 74px;
-    margin-left: -25px;
-}
-i#honey {
-    margin-left: 10px;
-}
-i#home {
-    margin-left: 35px;
-}
-img#date {
-    max-width: 84px;
-    margin-left: 54px;
-}*/
+
 
 a {
     color: brown;
@@ -300,15 +369,7 @@ button.dropdown-toggle {
     margin-top: 15px;
     margin-bottom: 1px;
 }
-/*img.theBarn {
-    
-}
-img.outsideLookAtBarn {
-    margin-left: 40px;
-}
-img.insideBarn {
-    margin-left: 75px;
-}*/
+
 .circle {
     border-radius: 50%;
     font-size: 4em;
@@ -320,21 +381,7 @@ p.btn.btn-primary.btn-small.registryGift {
 img.activeImg {
     max-width: 100px;
 }
-/*@media screen and (min-width: 768px){
 
-.jumbotron h1, .jumbotron .h1 {
-    margin-bottom: -126px;
-    font-size: 24px!important;
-    color: white;
-}
-.heading.jumbotron.text-center.aos-init.aos-animate {
-    margin: 280px;
-    width: 51%;
-    margin-top: 180px;
-    background: transparent;
-    color: black;
-}
-}*/
 @media(min-width:768px){
     div#__blaze-root {
         background: url(images/reflection.jpg)!important;
@@ -357,71 +404,31 @@ img.activeImg {
            font-weight: bold;
        }
 
-.jumbotron h1, .jumbotron .h1 {
-    /* margin-top: 100px!important; */
-    /* margin-bottom: -144px; */
-    font-size: 29px!important;
-    /* margin-left: 200px!important; */
-    color: white;
-    margin: auto!important;
-}
-.countDown {
-    background: rgba(0, 0, 0, 0.72);
-    /* margin: auto!important; */
-     padding: 25px; 
-    /*margin-top: 171px;*/
-    /* margin-left: -147px!important; */
-    /* width: 155%!important; */
-}
-a.btn.btn-doggie.btn-lg.btn-default {
+/*a.btn.btn-doggie.btn-lg.btn-default {
     border-radius: 0px;
     border: none;
-    /*width: 293px;*/
+    width: 293px;
     text-transform: uppercase;
     background: rgba(0, 188, 212, 0.72);
     color: white;
     letter-spacing: 8px;
-    font-size: 24px;
+    font-size: 11px;
     margin: auto!important;
-    /* margin-top: 22px; */
-    /* margin-left: 125px; */
-}
-.heading.jumbotron.text-center.aos-init.aos-animate {
-    /* margin: auto!important; */
-    /* width: 50%; */
-    /* margin-bottom: 176px; */
-    background: transparent;
-    color: black;
-    margin-top: 215px!important;
-}
+     margin-top: 22px; 
+    margin-left: 125px; 
+}*/
+
 li.list-group-item.clearfix.registry {
     margin-bottom: 8px;
 }
-  /*i#home {
-    margin-left: 113px;
-}
-i#honey {
-    margin-left: 58px;
-}
-img.bedbath {
-    max-width: 54px;
-    margin-left: -12px;
-}
-img.targetLogo {
-    max-width: 54px;
-    margin-left: -39px;
-}
-img#date {
-    max-width: 59px;
-    margin-left: 147px;
-}*/
+
 img.activeImg {
     margin-left: -69px;
     max-width: 235px!important;
 }
-img.theBarn {
+/*img.theBarn {
     margin-left: 63px;
-}
+}*/
 ul.nav.navbar-nav.navbar-right {
     padding: 0px;
     display: block;
@@ -433,47 +440,13 @@ ul.nav.navbar-nav.navbar-right {
 
 @media(min-width: 1000px){
 
-.jumbotron h1, .jumbotron .h1 {
-    /* margin-top: 100px!important; */
-    /* margin-bottom: -144px; */
-    font-size: 29px!important;
-    /* margin-left: 200px!important; */
-    color: white;
-    
-}
-.heading.jumbotron.text-center.aos-init.aos-animate {
-    /* margin: auto!important; */
-    /* width: 50%; */
-    /* margin-bottom: 176px; */
-    background: transparent;
-    color: black;
-    margin-top: 215px!important;
-}
 li.list-group-item.clearfix.registry {
     margin-bottom: 8px;
 }
-/*img.targetLogo.img-circle.gift {
-    max-width: 100px;
-}
-img.bedbath.img-circle.gift {
-    max-width: 100px;
-    margin-left: 30px;
-}*/
-/*i#honey {
-    margin-left: 100px!important;
-    font-size: 100px!important;
-}
-i#home {
-    margin-left: 161px!important;
-    font-size: 100px!important;
-}
-img#date {
-    max-width: 100px!important;
-    margin-left: 184px!important;
-}*/
-img.theBarn {
+
+/*img.theBarn {
     margin-left: 43px;
-}
+}*/
 ul.nav.navbar-nav.navbar-right {
     padding: 0px;
     display: block;
@@ -482,80 +455,7 @@ ul.nav.navbar-nav.navbar-right {
 }
 
 }
-@media(min-width:320px){
-  /*img.targetLogo {
-    max-width: 47px;
-    margin-left: -52px;
-}
-img.bedbath {
-    max-width: 47px;
-    margin-left: -38px;
-}
-i#honey {
-    margin-left: 6px;
-    font-size: 50px;
-}
-i#home {
-    font-size: 49px;
-    margin-left: 27px;
-}
-img#date {
-    max-width: 48px;
-    margin-left: 39px;
-}*/
 
-}
-@media(min-width:425px){
- /* img#date {
-    max-width: 55px;
-    margin-left: 50px;
-}
-i#home {
-    margin-left: 34px;
-}*/
 
-}
-
-@media(min-width:468px){
- /* img.targetLogo {
-    max-width: 72px;
-    margin-left: -46px;
-}*/
-}
-@media(min-width: 375px){
-  /*img.targetLogo {
-    max-width: 49px;
-    margin-left: -39px;
-}
-.circle {
-    border-radius: 50%;
-    font-size: 4em;
-}
-img.bedbath {
-    max-width: 49px;
-    margin-left: -25px;
-}
-i#home {
-    margin-left: 28px;
-}
-img#date {
-    max-width: 55px;
-    margin-left: 40px;
-}*/
-}
-
-/*@media(max-width:1000px){
-  i#honey {
-    margin-left: 58px;
-    font-size: 100px;
-}
-i#home {
-    margin-left: 113px;
-    font-size: 100px;
-}
-img#date {
-    max-width: 100px;
-}
-}*/
 
 

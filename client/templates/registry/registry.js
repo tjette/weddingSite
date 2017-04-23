@@ -1,5 +1,5 @@
 Template.registry.onRendered(function(){
-    AOS.init();
+    // AOS.init();
     Meteor.subscribe('registryOptions');
     Session.set('activeGift','target');
 })

@@ -106,5 +106,5 @@ Template.rsvp.onCreated(function () {
 });
 
 Template.rsvp.onRendered(function(){
-    AOS.init();
+    // AOS.init();
 })

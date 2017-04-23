@@ -53,5 +53,5 @@ event.preventDefault();
 });
 
 Template.contact.onRendered(function(){
-    AOS.init();
+    // AOS.init();
 })

@@ -9,5 +9,5 @@ Template.details.onCreated(function(){
 
 });
 Template.details.onRendered(function() {
-    AOS.init();
+    // AOS.init();
 });
