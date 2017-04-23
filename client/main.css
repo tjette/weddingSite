@@ -2,20 +2,19 @@
   display: flex;
   flex-direction: column;
   align-content: center;
-  margin-top: 250px
+  align-items: center;
+  margin:200px auto;
   width: 50%;
   background: transparent;
   color: black;
 }
-
-.heading.jumbotron.text-center.homeContainer {
-    align-items: center;
+p.lead.homeContainerItem {
+    width: 85%;
 }
 
 .homeContainerItem{
   align-content: center;
   align-items: center;
-  width: 50%;
 }
 a.btn.btn-doggie.btn-lg.btn-default.homeContainerItem {
     border-radius: 0px;
