@@ -214,6 +214,33 @@ a.btn.btn-doggie.btn-lg.btn-default {
 }
      .heading.jumbotron.text-center.aos-init.aos-animate {
     margin: auto!important;
+
+}
+/* Medium screens */
+@media all and (max-width: 800px) {
+  .flex-container {
+    /* When on medium sized screens, we center it by evenly distributing empty space around items */
+    justify-content: space-around;
+  }
+}
+
+/* Small screens */
+@media all and (max-width: 500px) {
+  .flex-container {
+    /* On small screens, we are no longer using row direction but column */
+    justify-content: center;
+  }
+ .flex-item {
+    height: 100px;
+    /* background-color: orange; */
+    text-align: center;
+    width: 48%;
+    align-items: center;
+    align-content: center;
+}
+  .anotherFlexItem{
+    width:43px;
+  }
 }
 @media(min-width:600px){
     div#__blaze-root {
