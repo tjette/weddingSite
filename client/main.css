@@ -3,8 +3,8 @@
   flex-direction: column;
   align-content: center;
   align-items: center;
-  margin:200px auto;
-  width: 50%;
+  margin:0px auto;
+  width: 65%;
   background: transparent;
   color: black;
 }
@@ -301,6 +301,18 @@ div#__blaze-root {
      margin-bottom: -6px!important; 
 }
 }
+@media(min-width: 1024px){
+  .homeContainer{
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  margin:200px auto;
+  width: 65%;
+  background: transparent;
+  color: black;
+}
+}
 @media(max-width: 1024px){
   .weddingPicsItem {
     align-items: center;
@@ -310,6 +322,8 @@ div#__blaze-root {
     margin-top: -23px;
     margin-bottom: -22px;
 }
+
+
 }
 
 @media(max-width: 768px){
@@ -444,11 +458,12 @@ ul.nav.navbar-nav.navbar-right {
 }
 
 
-@media(min-width: 1000px){
+@media(max-width: 1000px){
 
 li.list-group-item.clearfix.registry {
     margin-bottom: 8px;
 }
+
 
 /*img.theBarn {
     margin-left: 43px;
