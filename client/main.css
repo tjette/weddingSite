@@ -8,9 +8,7 @@
   background: transparent;
   color: black;
 }
-p.lead.homeContainerItem {
-    width: 85%;
-}
+
 button.dropdown-toggle {
     background-color: white;
     border: 3px;
@@ -18,6 +16,9 @@ button.dropdown-toggle {
 }
 h5.location.well {
     border: 3px solid gray;
+}
+p.registryP {
+    color: black;
 }
 .homeContainerItem{
   align-content: center;
@@ -65,7 +66,7 @@ a.btn.btn-doggie.btn-lg.btn-default.homeContainerItem {
 }
 
 .flex-item{
-  display:flex;
+  /*display:flex;*/
   height: 50px;
   /*background-color: orange;*/
   text-align: center;
@@ -80,6 +81,23 @@ a.btn.btn-doggie.btn-lg.btn-default.homeContainerItem {
   align-items: center;
   width: 50px;
 }
+i#home{
+  font-size:4em;
+}
+i#honey{
+  font-size:4em;
+}
+p.honeyMoonLabel.registryGift {
+    font-size: 14px;
+}
+.circle {
+    border-radius: 50%;
+    font-size: 4em;
+}
+img.activeImg {
+    width: 149px;
+    margin-top:30px;
+} 
 .fancy {
   font-family: 'Tangerine', cursive;
 }
@@ -351,6 +369,13 @@ div#__blaze-root {
     margin: 4px;
     width: 65px;
     border-radius: 50%;
+}
+img.activeImg {
+    /* margin: 0px auto!important; */
+    width: 165px;
+}
+p.btn.btn-success.registryGift {
+    font-size: 14px;
 }
 }
 
