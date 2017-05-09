@@ -63,7 +63,7 @@ let template = Template.instance();
 
 
     template.checkout = StripeCheckout.configure({
-        key: "pk_test_B8wWCBkUB5105eXRIJyJqTa0",
+        key: "pk_live_z8fV1hKl6EjydyBLTvlNFtDr",
         image: './images/engagement1.jpg',
         locale: 'auto',
         token( token ) {

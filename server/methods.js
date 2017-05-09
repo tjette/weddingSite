@@ -1,4 +1,4 @@
-Stripe = StripeAPI( 'sk_test_U9ilhQdWlUXiQatPH4iDbzD1' );
+Stripe = StripeAPI( 'sk_live_Cj0JTTKwqxB3rmuUnvXyOZwp' );
 Meteor.methods({
   sendEmail: function (emailObj) {
    //actual email sending method
@@ -9,10 +9,14 @@ Meteor.methods({
       html: emailObj.message
     });
   },
-  addRsvp: function(email, party){
+  addRsvp: function(rsvpObj){
     return Rsvp.insert({
-      email: email,
-      party: party
+      firstName: rsvpObj.firstName,
+      lastName: rsvpObj.lastName,
+      attend: rsvpObj.attend, 
+      party: rsvpObj.party,
+      email: rsvpObj.email
+      
     });
   },
   removeRsvp: function(){
