@@ -48,10 +48,10 @@ Template.rsvp.events({
             confirmButtonText: "Yes, looks good!",
             confirmButtonColor: "#ec6c62"
         }, function (isConfirm) {
-            if (isConfirm === true && rsvpObj.attend == "yes") {
+            if (isConfirm === true && rsvpObj.attend === "yes") {
                 // Meteor.call("addRsvp", rsvpObj);
                 var rsvpId = Rsvp.insert(rsvpObj);
-                Meteor.call('addGuests', parseFloat(rsvpObj.party));
+                Meteor.call('totalParty', parseFloat(rsvpObj.party));
                 console.log(rsvpId);
                 swal({
                     title: "Glad you can make it!",
@@ -65,7 +65,7 @@ Template.rsvp.events({
                 Meteor.call('sendEmail', emailObj)
                 console.log(emailObj);
                 FlowRouter.go('/details')
-            } else if(isConfirm === true && rsvpObj.attend == "no") {
+            } else if(isConfirm === true && rsvpObj.attend === "no") {
                 Rsvp.insert(rsvpObj);
                 // Meteor.call("addRsvp", rsvpObj);
                 swal({
@@ -74,9 +74,10 @@ Template.rsvp.events({
                     imageUrl: "./images/frownyFace.jpg"
                 });
                 
-            } else {
-                swal("Cancelled", "Your RSVP has been cancelled", "error");
-            }
+             } //else{
+
+            //     swal("Cancelled", "Your RSVP has been cancelled", "error");
+            // }
         });
 
 
