@@ -24,15 +24,14 @@ Template.rsvpStats.events({
 });
 
 Template.rsvpStats.onCreated(function () {
-    //add your statement here
-  //   Meteor.call('totalInParty',function(err,resp){
-  //console.log(resp);
-  //  _.each(resp,function(e){
-  //    console.log(e,"e")
-  //    Party.insert(e); // insert to local collection
-  //      return Session.set('totalParty', resp[0].numberOfGuests || 0);
-  //  })
-  //})
+  Meteor.call('totalParty',function(err,resp){
+  
+   _.each(resp,function(e){
+     console.log(e,"e")
+     Party.insert(e); // insert to local collection
+       return Session.set('totalParty', resp[0].numberOfGuests || 0);
+   })
+  })
 });
 
 Template.rsvpStats.onRendered(function () {
