@@ -1,10 +1,9 @@
 Meteor.startup(function(){
-    // if(Meteor.isClient){
-    //     AOS.init()
-    //     setInterval(function(){
-    //         Session.set('rightNow', new Date())
-    //     },1000);
+    if(Meteor.isClient){
+        setInterval(function(){
+            Session.set('rightNow', new Date())
+        },1000);
 
-    // }
+    }
   
 });
