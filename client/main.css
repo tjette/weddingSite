@@ -81,6 +81,7 @@ a.btn.btn-doggie.btn-lg.btn-default.homeContainerItem {
   align-items: center;
   width: 50px;
 }
+
 i#home{
   font-size:4em;
 }
@@ -232,8 +233,10 @@ div#__blaze-root {
 .teal.number {
    color: #00BCD4;
    font-size: 35px;
- }.countDown {
+ }
+ .countDown {
     background: rgba(0, 0, 0, 0.56);
+    padding: 20px;
   }h1 {
      text-transform: uppercase;
      letter-spacing: 8px;
