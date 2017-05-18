@@ -74,10 +74,10 @@ Template.rsvp.events({
                     imageUrl: "./images/frownyFace.jpg"
                 });
                 
-             } //else{
+             } else{
 
-            //     swal("Cancelled", "Your RSVP has been cancelled", "error");
-            // }
+                swal("Cancelled", "Your RSVP has been cancelled", "error");
+             }
         });
 
 
