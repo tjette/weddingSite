@@ -83,6 +83,9 @@ Meteor.methods({
  },
  removeParty: function(){
   return Party.remove({});
+ },
+ removeRsvpId: function(id){
+  return Rsvp.remove({id});
  }
 
 

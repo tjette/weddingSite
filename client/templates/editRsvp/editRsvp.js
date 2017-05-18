@@ -69,6 +69,8 @@ Tracker.autorun(function(){
     Session.set('going', going);
     }
 })
+ Meteor.subscribe( 'guests');
+    console.log("guest data");
 });
 
 Template.editRsvp.onRendered(function () {
