@@ -60,7 +60,7 @@ Template.rsvp.events({
                 });
                 emailObj = rsvpObj;
                 emailObj._id = rsvpId;
-                emailObj.subject = "Wedding RSVP Comfirmation: Travis Jette and Rachelle";
+                emailObj.subject = "Wedding RSVP Confirmation: Travis Jette and Rachelle";
                 emailObj.message = emailObj.firstName + " - <br><br> Thank you for submitting the RSVP!  This is your official RSVP confirmation. <br><br> If at any time before the wedding you wish to edit or cancel your RSVP, click this link  <a href='https://www.rachelleandtravis.com/editRsvp?id="+ emailObj._id +"'>Change RSVP</a> <br><br> - Travis and Rachelle";
                 Meteor.call('sendEmail', emailObj)
                 console.log(emailObj);
