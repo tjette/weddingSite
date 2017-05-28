@@ -82,6 +82,11 @@ a.btn.btn-doggie.btn-lg.btn-default.homeContainerItem {
   width: 50px;
 }
 
+p.title.homeImprovementLabel.registryGift {
+    margin-left: -21px;
+    width: 94px;
+}
+
 i#home{
   font-size:4em;
 }
