@@ -86,6 +86,9 @@ p.title.homeImprovementLabel.registryGift {
     margin-left: -21px;
     width: 94px;
 }
+p.honeyMoonLabel.registryGift {
+    margin-left: 5px;
+}
 
 i#home{
   font-size:4em;
