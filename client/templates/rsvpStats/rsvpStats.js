@@ -8,7 +8,7 @@ Template.rsvpStats.helpers({
     },
 
     totalNo: function () {
-        return Rsvp.find({'attend': false}).count();
+        return Rsvp.find({'attend': "no"}).count();
     },
     'allRsvp': function () {
         return Rsvp.find().fetch();
