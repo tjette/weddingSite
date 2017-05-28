@@ -82,6 +82,24 @@ a.btn.btn-doggie.btn-lg.btn-default.homeContainerItem {
   width: 50px;
 }
 
+.list-group{
+  display: flex;
+  justify-content: center;
+  flex-wrap:wrap;
+  align-items: center;
+  align-content: center;
+}
+
+.photoItem {
+    text-align: center;
+    flex-wrap: wrap;
+    width: 50%;
+    align-items: center;
+    align-content: center;
+    margin: 5px;
+    height: 100%;
+}
+
 p.title.homeImprovementLabel.registryGift {
     margin-left: -21px;
     width: 94px;
