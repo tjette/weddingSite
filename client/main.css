@@ -8,6 +8,12 @@
   background: transparent;
   color: black;
 }
+h1.weddingHeader {
+    font-size: 20px!important;
+}
+.weddingPartay {
+    font-size: 12px!important;
+}
 
 button.dropdown-toggle {
     background-color: white;
@@ -33,7 +39,7 @@ a.btn.btn-doggie.btn-lg.btn-default.homeContainerItem {
     color: white;
     letter-spacing: 8px;
     /*margin-left: -13px!important;*/
-     font-size: 11px; 
+     font-size: 11px;
     /* margin-top: 22px; */
 }
 .weddingPics {
@@ -124,7 +130,7 @@ p.honeyMoonLabel.registryGift {
 img.activeImg {
     width: 149px;
     margin-top:30px;
-} 
+}
 .fancy {
   font-family: 'Tangerine', cursive;
 }
@@ -224,7 +230,7 @@ ul.nav.navbar-nav.navbar-right {
 }@font-face{font-family:"TT Rounds Condensed Bold";src:url(/TTRoundsCondensed-Bold.woff2)}
 
 .instaTags{
-  list-style:none  
+  list-style:none
 }
 .instaTags li{
   float:left;
@@ -345,8 +351,8 @@ div#__blaze-root {
     /* width: 74px; */
     margin: 0px;
     border-radius: 50%;
-     margin-top: -12px!important; 
-     margin-bottom: -6px!important; 
+     margin-top: -12px!important;
+     margin-bottom: -6px!important;
 }
 }
 @media(min-width: 1024px){
@@ -489,8 +495,8 @@ img.activeImg {
     letter-spacing: 8px;
     font-size: 11px;
     margin: auto!important;
-     margin-top: 22px; 
-    margin-left: 125px; 
+     margin-top: 22px;
+    margin-left: 125px;
 }*/
 
 li.list-group-item.clearfix.registry {
@@ -531,7 +537,3 @@ ul.nav.navbar-nav.navbar-right {
 }
 
 }
-
-
-
-
