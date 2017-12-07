@@ -63,7 +63,7 @@ let template = Template.instance();
 
 
     template.checkout = StripeCheckout.configure({
-        key: "pk_live_z8fV1hKl6EjydyBLTvlNFtDr",
+        key: "pk_test_B8wWCBkUB5105eXRIJyJqTa0",
         image: './images/engagement1.jpg',
         locale: 'auto',
         token( token ) {
@@ -78,7 +78,7 @@ let template = Template.instance();
 
             Meteor.call( 'processPayment', charge, ( error, response ) => {
                 if ( error ) {
-                    
+
                     console.log(error);
                     swal("Error!", "Something went wrong processing the payment",'error');
                 } else {
@@ -91,6 +91,3 @@ let template = Template.instance();
         }
     });
 });
-
-
-

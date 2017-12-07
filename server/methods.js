@@ -1,4 +1,4 @@
-Stripe = StripeAPI( 'sk_live_Cj0JTTKwqxB3rmuUnvXyOZwp' );
+Stripe = StripeAPI( 'sk_test_U9ilhQdWlUXiQatPH4iDbzD1' );
 Meteor.methods({
   sendEmail: function (emailObj) {
    //actual email sending method
@@ -13,10 +13,10 @@ Meteor.methods({
     return Rsvp.insert({
       firstName: rsvpObj.firstName,
       lastName: rsvpObj.lastName,
-      attend: rsvpObj.attend, 
+      attend: rsvpObj.attend,
       party: rsvpObj.party,
       email: rsvpObj.email
-      
+
     });
   },
   removeRsvp: function(){
@@ -60,7 +60,7 @@ Meteor.methods({
 
       });
   },
-  
+
   removeGifts:function(){
     return Gift.remove({});
   },
@@ -74,12 +74,12 @@ Meteor.methods({
   var pipeline = [
     {$group: {_id: "master",
      numberOfGuests: {$sum: "$party"}}}
-    
+
   ];
   var result = Rsvp.aggregate(pipeline);
   console.log(result);
   return result;
-   
+
  },
  removeParty: function(){
   return Party.remove({});
@@ -90,11 +90,3 @@ Meteor.methods({
 
 
 });
-
-
-
-
-
-
-
-
